@@ -1,11 +1,11 @@
 # Next Actions
 
 ## Required Sequence
-1. Confirm the current English website copy as the translation source.
-2. Draft Romanian and Bulgarian translations from the approved English copy.
-3. Review translation accuracy, industrial terminology, and professional tone.
-4. Approve the URL strategy documented in `docs/MULTILINGUAL_STRATEGY.md`.
-5. Prepare a strictly scoped multilingual implementation task covering content architecture, path handling, UI language switcher, and localized metadata.
+1. Review and approve the Romanian and Bulgarian translations in `docs/WEBSITE_COPY_MULTILINGUAL.md`.
+2. Review translation accuracy, industrial terminology, and professional tone.
+3. Approve the URL strategy documented in `docs/MULTILINGUAL_STRATEGY.md`.
+4. Implement the multilingual content module and localized metadata handling.
+5. Add the functional `EN / RO / BG` language switcher.
 6. Re-run build and browser QA in English, Romanian, and Bulgarian.
 7. Resume deployment hardening only after multilingual implementation is reviewed and approved.
 
@@ -25,4 +25,4 @@
 - Multilingual `robots.txt`, sitemap, canonical, and hreflang strategy after implementation.
 
 ## Implementation Gate
-Do not start multilingual frontend implementation until the English source copy, Romanian and Bulgarian translations, and URL strategy are reviewed and approved. Keep the first multilingual implementation task limited to content architecture, path handling, UI language switcher, and localized metadata. Do not resume deployment hardening until multilingual implementation and QA are complete.
+Do not start multilingual frontend implementation until `docs/WEBSITE_COPY_MULTILINGUAL.md`, its Romanian and Bulgarian translations, and the URL strategy are reviewed and approved. Keep the first multilingual implementation task limited to content architecture, path handling, UI language switcher, and localized metadata. Do not resume deployment hardening until multilingual implementation and QA are complete.

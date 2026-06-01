@@ -38,6 +38,8 @@ Use `docs/VISUAL_DIRECTION.md` as the visual-work reference after approval. The 
 
 Use `docs/MULTILINGUAL_STRATEGY.md` as the pre-launch language architecture reference. Deployment hardening is paused until the English, Romanian, and Bulgarian content architecture, language switcher, path handling, localized metadata, build validation, and browser QA are complete and approved.
 
+Use `docs/WEBSITE_COPY_MULTILINGUAL.md` as the copy source for the multilingual frontend after approval. It contains the controlled English source, Romanian and Bulgarian translations, navigation labels, CTA labels, footer labels, localized metadata, claim constraints, and verification gate.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -52,8 +54,9 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 8. `docs/WEBSITE_COPY.md`
 9. `docs/VISUAL_DIRECTION.md`
 10. `docs/MULTILINGUAL_STRATEGY.md`
-11. `docs/ISSUES_LOG.md`
-12. `docs/DECISIONS_LOG.md`
+11. `docs/WEBSITE_COPY_MULTILINGUAL.md`
+12. `docs/ISSUES_LOG.md`
+13. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Draft and review Romanian and Bulgarian translations from the approved English source copy, approve the multilingual URL strategy, and then prepare a strictly scoped multilingual frontend implementation task.
+Review and approve the Romanian and Bulgarian translations in `docs/WEBSITE_COPY_MULTILINGUAL.md`, approve the multilingual URL strategy, and then prepare a strictly scoped multilingual frontend implementation task.
