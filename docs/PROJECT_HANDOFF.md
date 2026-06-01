@@ -16,7 +16,7 @@ Documentation bootstrap / pre-implementation.
 - Existing Flask/Python backend classified as archived legacy/reference code.
 - Plant-project direction documented: extraction and processing of vegetable proteins, protein isolate, and oils from soybean, sunflower, and rapeseed.
 - Structure options documented: compact multi-page or structured one-page project site, pending management confirmation.
-- Language rollout documented: English, then Romanian, with Bulgarian deferred unless commercially justified.
+- Pre-launch multilingual requirement documented: English, Romanian, and Bulgarian are required for the Phase 1 launch.
 - SEO / GEO / XEO planning baseline documented.
 
 ## Backend Guardrail
@@ -36,6 +36,8 @@ Use `docs/WEBSITE_COPY.md` as the public-copy reference after approval. Implemen
 
 Use `docs/VISUAL_DIRECTION.md` as the visual-work reference after approval. The current leaf-style project mark is temporary and must not be treated as the official Dorostol Trade identity. Future visual work must use selected and approved official runtime logo assets and follow the documented brand, image, and phase guardrails.
 
+Use `docs/MULTILINGUAL_STRATEGY.md` as the pre-launch language architecture reference. Deployment hardening is paused until the English, Romanian, and Bulgarian content architecture, language switcher, path handling, localized metadata, build validation, and browser QA are complete and approved.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -49,8 +51,9 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 7. `docs/WEBSITE_CONTENT_MODEL.md`
 8. `docs/WEBSITE_COPY.md`
 9. `docs/VISUAL_DIRECTION.md`
-10. `docs/ISSUES_LOG.md`
-11. `docs/DECISIONS_LOG.md`
+10. `docs/MULTILINGUAL_STRATEGY.md`
+11. `docs/ISSUES_LOG.md`
+12. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Review and approve `docs/VISUAL_DIRECTION.md`, select official logo files for runtime use, approve their asset location and filenames, and decide the strict scope of the first Phase 1A visual-refinement task.
+Draft and review Romanian and Bulgarian translations from the approved English source copy, approve the multilingual URL strategy, and then prepare a strictly scoped multilingual frontend implementation task.
