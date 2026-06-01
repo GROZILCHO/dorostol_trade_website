@@ -13,7 +13,8 @@
 ## Architecture
 - Treat the website as a frontend-focused React/Vite prototype.
 - Do not treat the Flask backend as approved production architecture.
-- Backend changes require explicit approval.
+- Treat `dorostol-trade-backend/` as archived legacy/reference code only.
+- Do not modify, extend, deploy, or wire the backend to frontend features unless a future documented PM decision explicitly approves backend work.
 - Do not invent architecture, integrations, or deployment behavior.
 
 ## Content And Routes

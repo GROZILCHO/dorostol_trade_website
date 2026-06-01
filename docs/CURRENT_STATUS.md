@@ -13,7 +13,7 @@ Latest known commit:
 React/Vite corporate website prototype in `dorostol-trade-website/`.
 
 ## Backend
-Flask/Python prototype present in `dorostol-trade-backend/`. Production architecture status is unresolved.
+Flask/Python code is present in `dorostol-trade-backend/`, but it is archived legacy/reference code only. It is not approved production architecture and must not be extended, deployed, or connected to frontend features. A future backend strategy decision remains open if forms, CRM, catalog, admin, API, or automation requirements justify backend work.
 
 ## Design References
 Reference screenshots are stored under `docs/design-reference/`.
