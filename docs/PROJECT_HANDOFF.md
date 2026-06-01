@@ -34,6 +34,8 @@ Use `docs/WEBSITE_CONTENT_MODEL.md` as the implementation-planning reference aft
 
 Use `docs/WEBSITE_COPY.md` as the public-copy reference after approval. Implementation must follow its section copy, conservative claim notes, CTA wording, and metadata unless a later documented decision changes them.
 
+Use `docs/VISUAL_DIRECTION.md` as the visual-work reference after approval. The current leaf-style project mark is temporary and must not be treated as the official Dorostol Trade identity. Future visual work must use selected and approved official runtime logo assets and follow the documented brand, image, and phase guardrails.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -46,8 +48,9 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 6. `docs/PLANT_PROJECT_CONTENT.md`
 7. `docs/WEBSITE_CONTENT_MODEL.md`
 8. `docs/WEBSITE_COPY.md`
-9. `docs/ISSUES_LOG.md`
-10. `docs/DECISIONS_LOG.md`
+9. `docs/VISUAL_DIRECTION.md`
+10. `docs/ISSUES_LOG.md`
+11. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Review and approve `docs/WEBSITE_COPY.md` and its metadata, then decide the visual direction before preparing any implementation task.
+Review and approve `docs/VISUAL_DIRECTION.md`, select official logo files for runtime use, approve their asset location and filenames, and decide the strict scope of the first Phase 1A visual-refinement task.
