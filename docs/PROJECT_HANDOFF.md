@@ -22,6 +22,9 @@ Documentation bootstrap / pre-implementation.
 ## Backend Guardrail
 Do not modify, extend, deploy, or connect `dorostol-trade-backend/` to frontend features. A future documented PM decision may define a new backend strategy if forms, CRM, catalog, admin, API, or automation requirements justify backend work.
 
+## Phase 1 Contact Strategy
+Launch Phase 1 without a contact form. Keep direct `mailto:` and `tel:` links only. Do not add backend, API, PHP, or third-party form-service wiring. A contact form is deferred to Phase 2 and requires a documented decision covering spam protection, GDPR consent, data storage, and the selected delivery architecture.
+
 ## Current Gate
 No implementation task should start until content from the external reference PDF is extracted, reviewed, documented, and explicitly approved.
 
@@ -59,4 +62,4 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 13. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Review and approve the Romanian and Bulgarian translations in `docs/WEBSITE_COPY_MULTILINGUAL.md`, approve the multilingual URL strategy, and then prepare a strictly scoped multilingual frontend implementation task.
+Review and approve the Romanian and Bulgarian translations, approve an Open Graph preview image, optimize the public map and product images, and validate the static Apache/cPanel deployment on `https://www.dorostol.trade/`.

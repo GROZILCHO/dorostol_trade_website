@@ -42,6 +42,7 @@ export const siteContent = {
       description:
         'Dorostol Trade presents a planned plant in Andrasesti, Romania, for vegetable proteins, protein isolate, and oils.',
       locale: 'en_US',
+      url: 'https://www.dorostol.trade/',
     },
     ui: {
       primaryNavigation: 'Primary navigation',
@@ -189,6 +190,7 @@ export const siteContent = {
       description:
         'Dorostol Trade prezintă o fabrică planificată la Andrasesti, România, pentru proteine vegetale, izolat proteic și uleiuri.',
       locale: 'ro_RO',
+      url: 'https://www.dorostol.trade/ro/',
     },
     ui: {
       primaryNavigation: 'Navigare principală',
@@ -340,6 +342,7 @@ export const siteContent = {
       description:
         'Dorostol Trade представя планиран завод в Андрашещ, Румъния, за растителни протеини, протеинов изолат и масла.',
       locale: 'bg_BG',
+      url: 'https://www.dorostol.trade/bg/',
     },
     ui: {
       primaryNavigation: 'Основна навигация',

@@ -1,0 +1,12 @@
+Options -MultiViews
+RewriteEngine On
+
+# Normalize the production host and require HTTPS.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.dorostol\.trade$ [NC]
+RewriteRule ^ https://www.dorostol.trade%{REQUEST_URI} [R=301,L]
+
+# Serve the Vite application for direct multilingual path access and refreshes.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]

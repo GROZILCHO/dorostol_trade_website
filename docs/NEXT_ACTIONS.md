@@ -2,12 +2,12 @@
 
 ## Required Sequence
 1. Review and approve the Romanian and Bulgarian translations in `docs/WEBSITE_COPY_MULTILINGUAL.md`.
-2. Review translation accuracy, industrial terminology, and professional tone.
-3. Approve the URL strategy documented in `docs/MULTILINGUAL_STRATEGY.md`.
-4. Implement the multilingual content module and localized metadata handling.
-5. Add the functional `EN / RO / BG` language switcher.
-6. Re-run build and browser QA in English, Romanian, and Bulgarian.
-7. Resume deployment hardening only after multilingual implementation is reviewed and approved.
+2. Confirm public approval of the direct email and phone contact details.
+3. Prepare and approve an Open Graph preview image.
+4. Optimize the map and product images for web delivery.
+5. Complete the privacy / legal minimum for the static Phase 1 launch.
+6. Choose analytics or explicitly launch without analytics.
+7. Validate Apache/cPanel deployment, HTTPS, `www` redirects, direct `/ro/` and `/bg/` refreshes, and production metadata.
 
 ## Additional Inputs Needed
 - Approved PDF-based project claims, product names, technical descriptions, and contact details.
@@ -17,12 +17,14 @@
 - Approved multilingual URL strategy.
 - Design-system specification derived from the reference screenshots.
 - Runtime image requirements and asset ownership.
-- Hosting, deployment, analytics, and form-handling requirements.
+- Hosting, deployment, and analytics requirements.
+- Phase 1 uses direct `mailto:` and `tel:` links only. A contact form is deferred to Phase 2.
 - Whether future forms, CRM, catalog, admin, API, or automation requirements justify a new backend strategy decision.
 - Page-level SEO metadata and internal-linking plan.
-- Final canonical domain: apex or `www`.
+- Canonical production host: `https://www.dorostol.trade/`.
 - Localized SEO and Open Graph metadata.
-- Multilingual `robots.txt`, sitemap, canonical, and hreflang strategy after implementation.
+- Approved Open Graph preview image.
+- Web-optimized map and product-image variants.
 
 ## Implementation Gate
-Do not start multilingual frontend implementation until `docs/WEBSITE_COPY_MULTILINGUAL.md`, its Romanian and Bulgarian translations, and the URL strategy are reviewed and approved. Keep the first multilingual implementation task limited to content architecture, path handling, UI language switcher, and localized metadata. Do not resume deployment hardening until multilingual implementation and QA are complete.
+Phase 1 must remain a static multilingual site with direct `mailto:` and `tel:` contact links only. Do not add a contact form, backend, API wiring, or form service until a documented Phase 2 decision approves the scope. Complete the remaining pre-launch review and production-host validation before public launch.
