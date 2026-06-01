@@ -14,10 +14,18 @@ Establish a reviewed documentation baseline before implementation work starts.
 - Repository hygiene: `.gitignore` repair completed in commit `95ab6e2dc33d0d6bc59048969b4fb413e3e54761`.
 
 ## Working Direction
-Treat the project as a frontend-focused corporate website prototype. The Flask backend is present but is not approved production architecture.
+Treat the project as a frontend-focused corporate website prototype for an engineering-led industrial B2B company. The Flask backend is present but is not approved production architecture.
 
 ## Positioning
-Dorostol Trade SRL is an industrial B2B company focused on equipment distribution, production line engineering, project implementation, transport capacity, and commodity trade across Romania, Bulgaria, Moldova, and future international markets.
+Dorostol Trade SRL is an engineering-led industrial B2B company focused on:
+- Engineering and industrial projects.
+- Production line planning and implementation.
+- Food processing and agro-industry facilities.
+- Grain processing, mills, silos, feed mills, and related industrial systems.
+- Equipment delivery and integration as part of complete engineering solutions.
+- Automation, installation, commissioning, and project support where applicable.
+
+Broad commodity trade, general transport services, and standalone trading activity are outside the core Dorostol Trade website positioning. Trade-related activities may belong to Mall Agro or other company and site directions.
 
 ## Website Purpose
 The website must function as an industrial B2B credibility and lead-generation platform, not as a generic corporate brochure.
