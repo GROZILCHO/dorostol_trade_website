@@ -29,9 +29,9 @@ const locationAdvantages = [
 ]
 
 const products = [
-  ['Plant proteins', 'Planned plant-based protein output from selected oilseed and soybean inputs.', Sprout],
-  ['Protein isolate', 'A focused protein-isolate pathway within the planned product portfolio.', PackageCheck],
-  ['Vegetable oils', 'Planned oil output from soybean, sunflower, and rapeseed processing.', Wheat],
+  ['Plant proteins', 'Planned plant-based protein output from selected oilseed and soybean inputs.', Sprout, '/assets/plant-project/dorostol-product-plant-protein.png', 'Illustrative plant protein ingredient visual.'],
+  ['Protein isolate', 'A focused protein-isolate pathway within the planned product portfolio.', PackageCheck, '/assets/plant-project/dorostol-product-protein-isolate.png', 'Illustrative protein isolate ingredient visual.'],
+  ['Vegetable oils', 'Planned oil output from soybean, sunflower, and rapeseed processing.', Wheat, '/assets/plant-project/dorostol-product-vegetable-oils.png', 'Illustrative vegetable oils ingredient visual.'],
 ]
 
 const targets = [
@@ -162,6 +162,13 @@ const Home = () => (
           title="Located in Andrasesti, Romania"
           description="The planned plant is located approximately 80 km north-east of Bucharest. Its location supports a clear connection between agricultural areas, logistics access, and EU market context."
         />
+        <div className="mt-10 overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl">
+          <img
+            src="/assets/plant-project/dorostol-map-andrasesti.png"
+            alt="Illustrative map showing Andrasesti, Bucharest and Constanta Port in Romania."
+            className="aspect-[16/9] w-full object-cover"
+          />
+        </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {locationAdvantages.map(([title, description]) => (
             <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-5">
@@ -183,13 +190,16 @@ const Home = () => (
           description="The plant project is focused on producing plant-based ingredients and oils from soybean, sunflower, and rapeseed."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {products.map(([title, description, Icon]) => (
-            <div key={title} className="rounded-3xl border border-brand-900/10 bg-white p-7 shadow-sm">
-              <span className="flex size-12 items-center justify-center rounded-2xl bg-brand-100 text-accent-500">
-                <Icon className="size-6" aria-hidden="true" />
-              </span>
-              <h3 className="mt-6 text-xl font-bold text-brand-950">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
+          {products.map(([title, description, Icon, image, alt]) => (
+            <div key={title} className="overflow-hidden rounded-3xl border border-brand-900/10 bg-white shadow-sm">
+              <img src={image} alt={alt} className="aspect-[4/3] w-full object-cover" />
+              <div className="p-7">
+                <span className="flex size-12 items-center justify-center rounded-2xl bg-brand-100 text-accent-500">
+                  <Icon className="size-6" aria-hidden="true" />
+                </span>
+                <h3 className="mt-6 text-xl font-bold text-brand-950">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
+              </div>
             </div>
           ))}
         </div>
