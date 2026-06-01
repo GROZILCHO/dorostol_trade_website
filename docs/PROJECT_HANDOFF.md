@@ -32,6 +32,8 @@ Use `docs/PLANT_PROJECT_CONTENT.md` as the content-planning document once popula
 
 Use `docs/WEBSITE_CONTENT_MODEL.md` as the implementation-planning reference after approval. It defines the Phase 1 structured one-page website, section order, navigation labels, CTA strategy, entity targets, claim guardrails, and deferred content.
 
+Use `docs/WEBSITE_COPY.md` as the public-copy reference after approval. Implementation must follow its section copy, conservative claim notes, CTA wording, and metadata unless a later documented decision changes them.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -43,8 +45,9 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 5. `docs/NEXT_ACTIONS.md`
 6. `docs/PLANT_PROJECT_CONTENT.md`
 7. `docs/WEBSITE_CONTENT_MODEL.md`
-8. `docs/ISSUES_LOG.md`
-9. `docs/DECISIONS_LOG.md`
+8. `docs/WEBSITE_COPY.md`
+9. `docs/ISSUES_LOG.md`
+10. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Review and approve `docs/WEBSITE_CONTENT_MODEL.md`, then draft public website copy and SEO metadata before preparing any implementation task.
+Review and approve `docs/WEBSITE_COPY.md` and its metadata, then decide the visual direction before preparing any implementation task.
