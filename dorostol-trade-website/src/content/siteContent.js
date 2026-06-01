@@ -1,3 +1,5 @@
+const socialPreviewImage = 'https://www.dorostol.trade/assets/brand/dorostol-og-preview.png'
+
 const productAssets = [
   {
     image: '/assets/plant-project/dorostol-product-plant-protein.webp',
@@ -43,6 +45,7 @@ export const siteContent = {
         'Dorostol Trade presents a planned plant in Andrasesti, Romania, for vegetable proteins, protein isolate, and oils.',
       locale: 'en_US',
       url: 'https://www.dorostol.trade/',
+      image: socialPreviewImage,
     },
     ui: {
       primaryNavigation: 'Primary navigation',
@@ -191,6 +194,7 @@ export const siteContent = {
         'Dorostol Trade prezintă o fabrică planificată la Andrasesti, România, pentru proteine vegetale, izolat proteic și uleiuri.',
       locale: 'ro_RO',
       url: 'https://www.dorostol.trade/ro/',
+      image: socialPreviewImage,
     },
     ui: {
       primaryNavigation: 'Navigare principală',
@@ -343,6 +347,7 @@ export const siteContent = {
         'Dorostol Trade представя планиран завод в Андрашещ, Румъния, за растителни протеини, протеинов изолат и масла.',
       locale: 'bg_BG',
       url: 'https://www.dorostol.trade/bg/',
+      image: socialPreviewImage,
     },
     ui: {
       primaryNavigation: 'Основна навигация',

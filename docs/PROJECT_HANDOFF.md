@@ -47,6 +47,8 @@ Runtime plant-project images use optimized WebP files from `dorostol-trade-websi
 
 Runtime header and footer logos use optimized WebP files from `dorostol-trade-website/public/assets/brand/`. The original logo PNG files remain in the same directory as source/reference backups. Below-fold map, product, and footer-logo images use lazy loading with asynchronous decoding. The favicon uses the optimized `dorostol-mark-runtime.png` asset. Moving oversized original PNG backups outside `public/` remains an optional deployment-artifact cleanup after launch-package testing.
 
+The approved Open Graph preview image is `dorostol-trade-website/public/assets/brand/dorostol-og-preview.png`. Use it for social-sharing metadata. It presents the plant project with the official Dorostol identity, conservative project wording, and no operating-plant implication.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -66,4 +68,4 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 13. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Review and approve the Romanian and Bulgarian translations, approve an Open Graph preview image, and validate the static Apache/cPanel deployment on `https://www.dorostol.trade/`.
+Review and approve the Romanian and Bulgarian translations, decide GA / Search Console setup, and validate the static Apache/cPanel deployment on `https://www.dorostol.trade/`.
