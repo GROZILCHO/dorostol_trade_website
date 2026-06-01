@@ -16,17 +16,34 @@ Establish a reviewed documentation baseline before implementation work starts.
 ## Working Direction
 Treat the project as a frontend-focused corporate website prototype. The Flask backend is present but is not approved production architecture.
 
-## Known Business Context
-Dorostol Trade SRL is an industrial B2B company connected to agriculture, grain processing, food industry machinery, engineering, equipment distribution, production-line planning, construction or engineering support, transport, and trade between Bulgaria and Romania.
+## Positioning
+Dorostol Trade SRL is an industrial B2B company focused on equipment distribution, production line engineering, project implementation, transport capacity, and commodity trade across Romania, Bulgaria, Moldova, and future international markets.
+
+## Website Purpose
+The website must function as an industrial B2B credibility and lead-generation platform, not as a generic corporate brochure.
+
+## Language Strategy
+- Phase 1: English.
+- Phase 2: Romanian.
+- Phase 3: Bulgarian only if commercially justified later.
+
+## SEO / GEO / XEO Baseline
+The site must be structured for:
+- Search engines.
+- AI answer engines.
+- Entity clarity.
+- Clear topical authority.
+- Strong internal linking.
+- Non-generic B2B industrial language.
 
 ## Unknowns
-- Approved business claims and company facts.
+- Approved supporting claims and company facts beyond the positioning baseline.
 - Final audience priorities and conversion goals.
-- Final content, languages, contact details, and legal pages.
-- Final route structure and content model.
-- SEO requirements and metadata.
+- Final content, contact details, and legal pages.
+- Detailed content model.
+- Page-level SEO requirements and metadata.
 - Design-system specification and approved runtime image assets.
 - Hosting, deployment, analytics, forms, and backend requirements.
 
 ## Implementation Gate
-Implementation remains blocked until this baseline is reviewed and the next task is explicitly scoped.
+Implementation remains blocked until these planning decisions are committed and the next task is explicitly scoped.
