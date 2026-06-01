@@ -23,3 +23,10 @@ Before starting a scoped task, read:
 
 ## Current Gate
 Implementation is blocked until the minimum documentation set is reviewed and the open decisions in `docs/NEXT_ACTIONS.md` are resolved or explicitly scoped.
+
+## Codex Stop Conditions
+Stop and report back if:
+- The starting worktree is unexpectedly dirty.
+- The task scope requires edits outside approved files.
+- Generated files are tracked.
+- Business, architecture, route, or content decisions are required but unresolved.

@@ -7,7 +7,7 @@ Documentation bootstrap / pre-implementation.
 Clean after `.gitignore` repair.
 
 Latest known commit:
-`95ab6e2dc33d0d6bc59048969b4fb413e3e54761 chore: repair gitignore rules`
+`3c1bcb8e4297e73b5342c3885a821abc65b57a58 docs: bootstrap project documentation`
 
 ## Frontend
 React/Vite corporate website prototype in `dorostol-trade-website/`.

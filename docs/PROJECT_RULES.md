@@ -26,3 +26,9 @@
 
 ## Protected Areas
 Do not change application source, backend source, package files, build configuration, generated files, assets, or deployment behavior unless a later task explicitly authorizes those changes.
+
+## Codex Stop Conditions
+- Stop if the starting worktree is unexpectedly dirty.
+- Stop if the task scope requires edits outside approved files.
+- Stop if generated files are tracked.
+- Stop if business, architecture, route, or content decisions are required but unresolved.
