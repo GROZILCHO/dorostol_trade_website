@@ -5,9 +5,10 @@
 2. Confirm public approval of the direct email and phone contact details.
 3. Prepare and approve an Open Graph preview image.
 4. Image optimization completed: runtime map and product images use WebP variants. Keep the original PNG files as source/reference backups.
-5. Complete the privacy / legal minimum for the static Phase 1 launch.
-6. Choose analytics or explicitly launch without analytics.
-7. Validate Apache/cPanel deployment, HTTPS, `www` redirects, direct `/ro/` and `/bg/` refreshes, and production metadata.
+5. Runtime logo optimization and lazy loading completed: header and footer use smaller runtime WebP logos; below-fold images load lazily.
+6. Complete the privacy / legal minimum for the static Phase 1 launch.
+7. Choose analytics or explicitly launch without analytics.
+8. Validate Apache/cPanel deployment, HTTPS, `www` redirects, direct `/ro/` and `/bg/` refreshes, and production metadata.
 
 ## Additional Inputs Needed
 - Approved PDF-based project claims, product names, technical descriptions, and contact details.
@@ -24,6 +25,7 @@
 - Canonical production host: `https://www.dorostol.trade/`.
 - Localized SEO and Open Graph metadata.
 - Approved Open Graph preview image.
+- Optional after launch-package testing: move oversized original PNG source backups outside `public/` so they are not copied into deployment artifacts.
 
 ## Implementation Gate
 Phase 1 must remain a static multilingual site with direct `mailto:` and `tel:` contact links only. Do not add a contact form, backend, API wiring, or form service until a documented Phase 2 decision approves the scope. Complete the remaining pre-launch review and production-host validation before public launch.

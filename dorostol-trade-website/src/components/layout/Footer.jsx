@@ -5,8 +5,10 @@ const Footer = ({ content }) => (
     <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
       <div>
         <img
-          src="/assets/brand/dorostol-logo-horizontal-dark.png"
+          src="/assets/brand/dorostol-logo-horizontal-dark-runtime.webp"
           alt="Dorostol Trade SRL"
+          loading="lazy"
+          decoding="async"
           className="mb-5 h-auto w-64 max-w-full object-contain"
         />
         <p className="max-w-xl text-sm leading-7 text-brand-100">

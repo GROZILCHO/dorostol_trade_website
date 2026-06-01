@@ -101,7 +101,7 @@ const Home = ({ content }) => (
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading inverted eyebrow={content.location.eyebrow} title={content.location.title} description={content.location.description} />
         <div className="mt-10 overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl">
-          <img src="/assets/plant-project/dorostol-map-andrasesti.webp" alt={content.location.imageAlt} className="aspect-[16/9] w-full object-cover" />
+          <img src="/assets/plant-project/dorostol-map-andrasesti.webp" alt={content.location.imageAlt} loading="lazy" decoding="async" className="aspect-[16/9] w-full object-cover" />
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {content.location.cards.map(([title, description]) => (
@@ -123,7 +123,7 @@ const Home = ({ content }) => (
             const Icon = productIcons[index]
             return (
               <div key={title} className="overflow-hidden rounded-3xl border border-brand-900/10 bg-white shadow-sm">
-                <img src={image} alt={imageAlt} className="aspect-[4/3] w-full object-cover" />
+                <img src={image} alt={imageAlt} loading="lazy" decoding="async" className="aspect-[4/3] w-full object-cover" />
                 <div className="p-7">
                   <span className="flex size-12 items-center justify-center rounded-2xl bg-brand-100 text-accent-500">
                     <Icon className="size-6" aria-hidden="true" />

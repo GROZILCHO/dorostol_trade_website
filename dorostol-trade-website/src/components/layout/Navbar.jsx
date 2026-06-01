@@ -35,8 +35,9 @@ const Navbar = ({ content, language }) => {
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8" aria-label={ui.primaryNavigation}>
         <a href="#hero" className="flex shrink-0 items-center" onClick={() => setIsOpen(false)}>
           <img
-            src="/assets/brand/dorostol-logo-horizontal.png"
+            src="/assets/brand/dorostol-logo-horizontal-runtime.webp"
             alt="Dorostol Trade SRL"
+            decoding="async"
             className="h-12 w-auto max-w-[10.5rem] object-contain sm:max-w-[12rem]"
           />
         </a>
