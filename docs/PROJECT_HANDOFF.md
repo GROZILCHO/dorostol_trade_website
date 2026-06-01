@@ -43,6 +43,8 @@ Use `docs/MULTILINGUAL_STRATEGY.md` as the pre-launch language architecture refe
 
 Use `docs/WEBSITE_COPY_MULTILINGUAL.md` as the copy source for the multilingual frontend after approval. It contains the controlled English source, Romanian and Bulgarian translations, navigation labels, CTA labels, footer labels, localized metadata, claim constraints, and verification gate.
 
+Runtime plant-project images use optimized WebP files from `dorostol-trade-website/public/assets/plant-project/`. The original PNG files remain in the same directory as source/reference runtime backups. Keep frontend runtime references on the WebP variants unless a later scoped asset decision changes the delivery strategy.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -62,4 +64,4 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 13. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Review and approve the Romanian and Bulgarian translations, approve an Open Graph preview image, optimize the public map and product images, and validate the static Apache/cPanel deployment on `https://www.dorostol.trade/`.
+Review and approve the Romanian and Bulgarian translations, approve an Open Graph preview image, and validate the static Apache/cPanel deployment on `https://www.dorostol.trade/`.

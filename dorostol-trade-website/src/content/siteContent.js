@@ -1,14 +1,14 @@
 const productAssets = [
   {
-    image: '/assets/plant-project/dorostol-product-plant-protein.png',
+    image: '/assets/plant-project/dorostol-product-plant-protein.webp',
     imageAlt: 'Illustrative plant protein ingredient visual.',
   },
   {
-    image: '/assets/plant-project/dorostol-product-protein-isolate.png',
+    image: '/assets/plant-project/dorostol-product-protein-isolate.webp',
     imageAlt: 'Illustrative protein isolate ingredient visual.',
   },
   {
-    image: '/assets/plant-project/dorostol-product-vegetable-oils.png',
+    image: '/assets/plant-project/dorostol-product-vegetable-oils.webp',
     imageAlt: 'Illustrative vegetable oil ingredient visual.',
   },
 ]
