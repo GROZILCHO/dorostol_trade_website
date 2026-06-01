@@ -30,6 +30,8 @@ The primary planning direction is the external reference PDF for the Dorostol Tr
 
 Use `docs/PLANT_PROJECT_CONTENT.md` as the content-planning document once populated. Future assistants and Codex should place reviewed PDF-derived content there rather than committing the external reference PDF.
 
+Use `docs/WEBSITE_CONTENT_MODEL.md` as the implementation-planning reference after approval. It defines the Phase 1 structured one-page website, section order, navigation labels, CTA strategy, entity targets, claim guardrails, and deferred content.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -40,8 +42,9 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 4. `docs/CURRENT_STATUS.md`
 5. `docs/NEXT_ACTIONS.md`
 6. `docs/PLANT_PROJECT_CONTENT.md`
-7. `docs/ISSUES_LOG.md`
-8. `docs/DECISIONS_LOG.md`
+7. `docs/WEBSITE_CONTENT_MODEL.md`
+8. `docs/ISSUES_LOG.md`
+9. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Extract and review content from the external reference PDF into `docs/PLANT_PROJECT_CONTENT.md`, then approve the content model before preparing any implementation task.
+Review and approve `docs/WEBSITE_CONTENT_MODEL.md`, then draft public website copy and SEO metadata before preparing any implementation task.
