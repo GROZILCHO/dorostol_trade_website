@@ -1,0 +1,13 @@
+/* File: dorostol-trade-website/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2.2rem; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
