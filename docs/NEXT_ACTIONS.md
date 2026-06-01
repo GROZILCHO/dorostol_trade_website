@@ -1,11 +1,11 @@
 # Next Actions
 
 ## Required Sequence
-1. Extract and review content from the external reference PDF.
-2. Define whether the site will be structured one-page or compact multi-page.
-3. Define final language priority.
-4. Define approved claims, product names, technical descriptions, and contact details.
-5. Prepare the content model before implementation.
+1. Extract PDF content into `docs/PLANT_PROJECT_CONTENT.md`.
+2. Review and approve public-facing claims.
+3. Decide whether the site will be structured one-page or compact multi-page.
+4. Decide final language priority.
+5. Finalize the approved content model.
 6. Only then prepare the first implementation task.
 
 ## Additional Inputs Needed

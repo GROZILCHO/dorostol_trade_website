@@ -26,7 +26,9 @@ Do not modify, extend, deploy, or connect `dorostol-trade-backend/` to frontend 
 No implementation task should start until content from the external reference PDF is extracted, reviewed, documented, and explicitly approved.
 
 ## Reference PDF Direction
-The primary planning direction is the external reference PDF for the Dorostol Trade oil and vegetable-protein plant project. Do not add the PDF to the repository. Use extracted and approved documentation before implementation.
+The primary planning direction is the external reference PDF for the Dorostol Trade oil and vegetable-protein plant project. Do not add the PDF to the repository unless a later explicit decision approves it. Use extracted and approved documentation before implementation.
+
+Use `docs/PLANT_PROJECT_CONTENT.md` as the content-planning document once populated. Future assistants and Codex should place reviewed PDF-derived content there rather than committing the external reference PDF.
 
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
@@ -37,8 +39,9 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 3. `docs/SITE_STRUCTURE.md`
 4. `docs/CURRENT_STATUS.md`
 5. `docs/NEXT_ACTIONS.md`
-6. `docs/ISSUES_LOG.md`
-7. `docs/DECISIONS_LOG.md`
+6. `docs/PLANT_PROJECT_CONTENT.md`
+7. `docs/ISSUES_LOG.md`
+8. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
-Extract and review content from the external reference PDF, then document the approved content model before preparing any implementation task.
+Extract and review content from the external reference PDF into `docs/PLANT_PROJECT_CONTENT.md`, then approve the content model before preparing any implementation task.
