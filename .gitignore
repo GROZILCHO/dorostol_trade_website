@@ -1,32 +1,58 @@
+# Dependencies
 node_modules/
 **/node_modules/
+
+# Build outputs
 .next/
 out/
 dist/
 **/dist/
 build/
 **/build/
-venv/
-**/venv/
+coverage/
+.vercel/
+
+# Python cache/runtime
 __pycache__/
 **/__pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+venv/
+.venv/
+**/venv/
+**/.venv/
+
+# Local databases and generated runtime files
 *.db
 *.sqlite
 *.sqlite3
+dorostol-trade-backend/src/database/
 dorostol-trade-backend/src/static/
+
+# Environment files
 .env
 .env.*
-.vercel/
-coverage/
-*.zip
-xx/
+!.env.example
+
+# Editor and OS files
 .vscode/
-~$*.docx
-~$*.xlsx
-~$*.pptx
+**/.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.DS_Store
+pnpm-debug.log*
+
+# Archives / temporary local exports
+xx/
+*.zip
+~$*.docx
+~$*.xlsx
+~$*.pptx
