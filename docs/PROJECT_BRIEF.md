@@ -14,21 +14,20 @@ Establish a reviewed documentation baseline before implementation work starts.
 - Repository hygiene: `.gitignore` repair completed in commit `95ab6e2dc33d0d6bc59048969b4fb413e3e54761`.
 
 ## Working Direction
-Treat the project as a frontend-focused corporate website prototype for an engineering-led industrial B2B company. The Flask backend is present but is not approved production architecture.
+Treat the project as a frontend-focused website prototype for Dorostol Trade SRL's own oil and vegetable-protein plant project. The Flask backend is present but is not approved production architecture.
 
 ## Positioning
-Dorostol Trade SRL is an engineering-led industrial B2B company focused on:
-- Engineering and industrial projects.
-- Production line planning and implementation.
-- Food processing and agro-industry facilities.
-- Grain processing, mills, silos, feed mills, and related industrial systems.
-- Equipment delivery and integration as part of complete engineering solutions.
-- Automation, installation, commissioning, and project support where applicable.
+Dorostol Trade SRL's website should focus primarily on the extraction and processing plant for vegetable proteins, protein isolate, and oils from:
+- Soybean.
+- Sunflower.
+- Rapeseed.
 
-Broad commodity trade, general transport services, and standalone trading activity are outside the core Dorostol Trade website positioning. Trade-related activities may belong to Mall Agro or other company and site directions.
+The website should present the project, its products, technology, business value, sustainability, and contact, investor, or partner pathway.
+
+Engineering services, broad commodity trade, general transport, and generic corporate service positioning are not core for this site unless a later documented management decision explicitly approves them.
 
 ## Website Purpose
-The website must function as an industrial B2B credibility and lead-generation platform, not as a generic corporate brochure.
+The website must function as a focused project presentation and credibility platform for the Dorostol Trade plant, with clear pathways for relevant contacts, investors, and partners.
 
 ## Language Strategy
 - Phase 1: English.
@@ -45,7 +44,7 @@ The site must be structured for:
 - Non-generic B2B industrial language.
 
 ## Unknowns
-- Approved supporting claims and company facts beyond the positioning baseline.
+- Approved PDF-based claims, product names, and technical descriptions.
 - Final audience priorities and conversion goals.
 - Final content, contact details, and legal pages.
 - Detailed content model.
@@ -54,4 +53,4 @@ The site must be structured for:
 - Hosting, deployment, analytics, forms, and backend requirements.
 
 ## Implementation Gate
-Implementation remains blocked until these planning decisions are committed and the next task is explicitly scoped.
+Implementation remains blocked until PDF-based content is extracted, reviewed, documented, and explicitly approved for implementation.
