@@ -1,153 +1,74 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Search, Globe } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import SearchModal from '../SearchModal'
+import { Leaf, Menu, X } from 'lucide-react'
+
+const navigation = [
+  { name: 'Overview', href: '#overview' },
+  { name: 'Market', href: '#market' },
+  { name: 'Location', href: '#location' },
+  { name: 'Products', href: '#products' },
+  { name: 'Capacity', href: '#capacity' },
+  { name: 'Sustainability', href: '#sustainability' },
+  { name: 'Contact', href: '#contact' },
+]
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const location = useLocation()
-
-  const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
-  ]
-
-  const languages = [
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'bg', name: 'Български', flag: '🇧🇬' },
-    { code: 'ro', name: 'Română', flag: '🇷🇴' },
-  ]
-
-  const isActive = (path) => location.pathname === path
 
   return (
-    <>
-      <nav className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <div className="text-2xl font-bold text-primary">
-                Dorostol Trade
-              </div>
-            </Link>
-          </div>
+    <header className="sticky top-0 z-50 border-b border-brand-900/10 bg-stone-50/95 backdrop-blur">
+      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Primary navigation">
+        <a href="#hero" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
+          <span className="flex size-10 items-center justify-center rounded-full bg-brand-700 text-white">
+            <Leaf className="size-5" aria-hidden="true" />
+          </span>
+          <span>
+            <span className="block text-lg font-bold tracking-tight text-brand-950">Dorostol Trade</span>
+            <span className="block text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-brand-700">Plant Project</span>
+          </span>
+        </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                  isActive(item.href)
-                    ? 'text-primary border-b-2 border-primary'
-                    : 'text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary'
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-
-          {/* Search and Language Switcher */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm" onClick={() => setIsSearchOpen(true)}>
-              <Search className="h-4 w-4" />
-            </Button>
-            
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm">
-                  <Globe className="h-4 w-4 mr-2" />
-                  EN
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                {languages.map((lang) => (
-                  <DropdownMenuItem key={lang.code}>
-                    <span className="mr-2">{lang.flag}</span>
-                    {lang.name}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
+        <div className="hidden items-center gap-5 lg:flex">
+          {navigation.map((item) => (
+            <a key={item.href} href={item.href} className="text-sm font-semibold text-slate-700 transition hover:text-brand-700">
+              {item.name}
+            </a>
+          ))}
         </div>
-      </div>
 
-      {/* Mobile Navigation */}
+        <a href="#contact" className="hidden rounded-full bg-brand-700 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-brand-800 sm:inline-flex">
+          Contact Dorostol Trade
+        </a>
+
+        <button
+          type="button"
+          className="inline-flex size-11 items-center justify-center rounded-full border border-brand-900/15 text-brand-900 lg:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
+          aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
+        >
+          {isOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+        </button>
+      </nav>
+
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+        <div id="mobile-navigation" className="border-t border-brand-900/10 bg-stone-50 px-4 py-4 lg:hidden">
+          <div className="mx-auto grid max-w-7xl gap-1">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
-                  isActive(item.href)
-                    ? 'text-primary bg-primary/10'
-                    : 'text-gray-700 hover:text-primary hover:bg-primary/5'
-                }`}
+              <a
+                key={item.href}
+                href={item.href}
+                className="rounded-lg px-3 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-100 hover:text-brand-800"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
-              </Link>
+              </a>
             ))}
-            <div className="flex items-center space-x-4 px-3 py-2">
-              <Button variant="ghost" size="sm" onClick={() => setIsSearchOpen(true)}>
-                <Search className="h-4 w-4" />
-              </Button>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="sm">
-                    <Globe className="h-4 w-4 mr-2" />
-                    EN
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  {languages.map((lang) => (
-                    <DropdownMenuItem key={lang.code}>
-                      <span className="mr-2">{lang.flag}</span>
-                      {lang.name}
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
           </div>
         </div>
       )}
-    </nav>
-    
-    <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
-  </>
+    </header>
   )
 }
 
 export default Navbar
-

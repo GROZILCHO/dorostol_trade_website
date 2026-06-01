@@ -1,102 +1,43 @@
-import { Link } from 'react-router-dom'
-import { Mail, Phone, MapPin, Linkedin, Facebook } from 'lucide-react'
+import { Leaf, Mail, Phone } from 'lucide-react'
 
-const Footer = () => {
-  const quickLinks = [
-    { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
-  ]
-
-  return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold mb-4">Dorostol Trade SRL</div>
-            <p className="text-gray-300 mb-6 max-w-md">
-              Expert engineering, industrial, and trading solutions for the Food & Beverage 
-              and Agriculture sectors in Romania & Bulgaria. Partner with us for innovative 
-              processing lines and agro-industrial projects.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
+const Footer = () => (
+  <footer className="bg-brand-950 text-white">
+    <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
+      <div>
+        <div className="mb-4 flex items-center gap-3">
+          <span className="flex size-10 items-center justify-center rounded-full bg-white/10">
+            <Leaf className="size-5" aria-hidden="true" />
+          </span>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-gray-300 hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <MapPin className="h-5 w-5 mr-3 text-gray-400" />
-                <div>
-                  <p className="text-gray-300">Bulgaria Office</p>
-                  <p className="text-sm text-gray-400">[Address to be provided]</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="h-5 w-5 mr-3 text-gray-400" />
-                <div>
-                  <p className="text-gray-300">Romania Office</p>
-                  <p className="text-sm text-gray-400">[Address to be provided]</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 mr-3 text-gray-400" />
-                <p className="text-gray-300">[Phone to be provided]</p>
-              </div>
-              <div className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 text-gray-400" />
-                <p className="text-gray-300">[Email to be provided]</p>
-              </div>
-            </div>
+            <p className="text-lg font-bold">Dorostol Trade</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-200">Plant Project</p>
           </div>
         </div>
+        <p className="max-w-xl text-sm leading-7 text-brand-100">
+          A planned extraction and processing plant in Andrasesti, Romania, focused on vegetable proteins,
+          protein isolate, and vegetable oils from soybean, sunflower, and rapeseed.
+        </p>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 Dorostol Trade SRL. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Terms of Service
-            </a>
-          </div>
+      <div>
+        <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-brand-200">Contact</p>
+        <div className="space-y-3 text-sm text-brand-100">
+          <a className="flex items-center gap-3 hover:text-white" href="mailto:office@dorostol.trade">
+            <Mail className="size-4" aria-hidden="true" /> office@dorostol.trade
+          </a>
+          <a className="flex items-center gap-3 hover:text-white" href="tel:+40741130614">
+            <Phone className="size-4" aria-hidden="true" /> RO +40 741 130 614
+          </a>
+          <a className="flex items-center gap-3 hover:text-white" href="tel:+359899015671">
+            <Phone className="size-4" aria-hidden="true" /> BG +359 89 901 5671
+          </a>
         </div>
       </div>
-    </footer>
-  )
-}
+    </div>
+    <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-brand-200">
+      © {new Date().getFullYear()} Dorostol Trade. All rights reserved.
+    </div>
+  </footer>
+)
 
 export default Footer
-

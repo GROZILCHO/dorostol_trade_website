@@ -1,13 +1,16 @@
-/* File: dorostol-trade-website/src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  h1 { font-size: 2.8rem; }
-  h2 { font-size: 2.2rem; }
-}
-
-@layer utilities {
-  .text-balance { text-wrap: balance; }
+@theme {
+  --color-brand-50: #f5f8f2;
+  --color-brand-100: #e6eee0;
+  --color-brand-200: #ccddc3;
+  --color-brand-500: #638555;
+  --color-brand-600: #4f7043;
+  --color-brand-700: #3e5936;
+  --color-brand-800: #33482e;
+  --color-brand-900: #293b27;
+  --color-brand-950: #142013;
+  --color-earth-100: #eee8dc;
+  --color-earth-300: #d2c39f;
+  --color-earth-500: #a48955;
 }
