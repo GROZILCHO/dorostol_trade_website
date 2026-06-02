@@ -54,6 +54,11 @@ Management confirmed the public project name as `Vegetable Protein and Oil Facto
 
 The active public location map uses `dorostol-trade-website/public/assets/plant-project/dorostol-map-ialomita.webp` and the confirmed `Ialomita Romania` wording. The previous Andrasesti map remains as an inactive reference asset. Do not add real site photos, renders, process diagrams, detailed map or layout material, galleries, or public PDF download CTAs until management provides and approves the relevant assets.
 
+## Phase 1.2 Credibility Refinement
+The one-page frontend includes conservative project-status and investment-highlight blocks plus a direct `mailto:` project-brief request CTA. The status wording explicitly treats production and capacity values as Year 5 targets rather than current operational output. The partner area clarifies appropriate inquiry types: partnership discussions, investor communication, supplier cooperation, and industrial or commercial inquiries.
+
+Do not replace the mailto CTA with a file download, contact form, backend, API, or third-party form service unless a later documented decision approves the scope. Keep future real-photo, render, process-diagram, gallery, and public-PDF work blocked until assets and claims are approved.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 

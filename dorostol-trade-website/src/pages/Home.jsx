@@ -67,6 +67,16 @@ const Home = ({ content }) => (
 
     <section id="overview" className="bg-stone-50 py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 grid gap-5 rounded-3xl border border-brand-900/10 bg-white p-6 shadow-sm sm:p-8 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-accent-600">{content.projectStatus.eyebrow}</p>
+            <h2 className="mt-3 text-2xl font-bold tracking-tight text-brand-950">{content.projectStatus.title}</h2>
+          </div>
+          <div>
+            <p className="leading-7 text-slate-600">{content.projectStatus.description}</p>
+            <p className="mt-4 text-sm font-semibold leading-6 text-brand-700">{content.projectStatus.note}</p>
+          </div>
+        </div>
         <SectionHeading eyebrow={content.overview.eyebrow} title={content.overview.title} description={content.overview.description} />
         <p className="mt-6 max-w-3xl leading-7 text-slate-600">{content.overview.detail}</p>
         <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -76,6 +86,18 @@ const Home = ({ content }) => (
               <p className="mt-2 text-sm font-semibold text-slate-600">{label}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-12">
+          <p className="text-xs font-bold uppercase tracking-[0.24em] text-accent-600">{content.investmentHighlights.eyebrow}</p>
+          <h3 className="mt-3 text-2xl font-bold tracking-tight text-brand-950">{content.investmentHighlights.title}</h3>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {content.investmentHighlights.items.map(([label, value]) => (
+              <div key={label} className="rounded-2xl border border-brand-900/10 bg-brand-50 p-5">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-brand-700">{label}</p>
+                <p className="mt-3 text-sm font-bold leading-6 text-brand-950">{value}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -187,9 +209,19 @@ const Home = ({ content }) => (
         <p className="mt-5 text-xs font-bold uppercase tracking-[0.24em] text-accent-600">{content.partnership.eyebrow}</p>
         <h2 className="mt-3 text-3xl font-bold tracking-tight text-brand-950 sm:text-4xl">{content.partnership.title}</h2>
         <p className="mx-auto mt-5 max-w-3xl leading-7 text-slate-700">{content.partnership.description}</p>
-        <a href="#contact" className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-accent-600">
-          {content.ctas.partnership} <ArrowRight className="size-4" aria-hidden="true" />
-        </a>
+        <div className="mx-auto mt-6 flex max-w-3xl flex-wrap justify-center gap-2">
+          {content.partnership.inquiryTypes.map((item) => (
+            <span key={item} className="rounded-full border border-brand-900/10 bg-white/70 px-4 py-2 text-xs font-bold text-brand-700">{item}</span>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-accent-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-accent-600">
+            {content.ctas.partnership} <ArrowRight className="size-4" aria-hidden="true" />
+          </a>
+          <a href={`mailto:${content.contact.office}?subject=${encodeURIComponent(content.partnership.briefSubject)}`} className="inline-flex items-center gap-2 rounded-full border border-brand-700/25 bg-white/70 px-6 py-3 text-sm font-bold text-brand-950 transition hover:border-accent-500">
+            <Mail className="size-4" aria-hidden="true" /> {content.ctas.projectBrief}
+          </a>
+        </div>
       </div>
     </section>
 

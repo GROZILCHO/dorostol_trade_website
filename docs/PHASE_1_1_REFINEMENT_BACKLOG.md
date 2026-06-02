@@ -28,16 +28,20 @@ Document potential improvements for the next refinement pass after management an
 ## Project Naming Decision
 Use the confirmed conservative public name: `Vegetable Protein and Oil Factory`. Avoid alternative or overly branded names unless management approves a later change.
 
-## Potential Phase 1.1 Additions
-Documented for review only. None are approved for implementation yet.
-
+## Completed Phase 1.2 Credibility Refinements
 - Project Status block.
 - Investment Highlights block.
-- Request Project Brief CTA.
+- Request Project Brief `mailto:` CTA.
+
+## Potential Future Additions
+Documented for review only. None are approved for implementation yet.
+
 - Timeline / Roadmap block.
 - Product Use Cases block.
 - Supply Chain / Process diagram.
 - Real site photos or approved render integration.
+- Gallery.
+- Public PDF download CTA.
 
 ## Claim Guardrails
 - Do not imply the plant is currently operational.

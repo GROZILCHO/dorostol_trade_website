@@ -65,6 +65,7 @@ export const siteContent = {
     ctas: {
       contact: 'Contact Dorostol Trade',
       partnership: 'Discuss Partnership Opportunities',
+      projectBrief: 'Request Project Brief',
     },
     hero: {
       eyebrow: 'Vegetable Protein and Oil Factory',
@@ -80,6 +81,13 @@ export const siteContent = {
         ['Ialomita', 'Romania'],
       ],
     },
+    projectStatus: {
+      eyebrow: 'Project status',
+      title: 'Planned industrial investment project',
+      description:
+        'The Vegetable Protein and Oil Factory is presented as a planned industrial investment project. Production and capacity figures are Year 5 targets, not current operational output.',
+      note: 'Detailed technical and commercial information is available through direct project communication.',
+    },
     overview: {
       eyebrow: 'Project overview',
       title: 'A planned industrial project rooted in regional agriculture',
@@ -91,6 +99,16 @@ export const siteContent = {
         ['2013', 'Established in Romania'],
         ['April 2025', 'Investment agreement'],
         ['EUR 43.9M', 'Reported project budget'],
+      ],
+    },
+    investmentHighlights: {
+      eyebrow: 'Investment highlights',
+      title: 'A focused project profile',
+      items: [
+        ['Project identity', 'Vegetable Protein and Oil Factory'],
+        ['Regional location', 'Ialomita Romania'],
+        ['Production focus', 'Vegetable proteins and oils'],
+        ['Year 5 capacity target', '35,500 MT final product annually'],
       ],
     },
     market: {
@@ -166,6 +184,8 @@ export const siteContent = {
       title: 'Discuss the Vegetable Protein and Oil Factory',
       description:
         'Dorostol Trade SRL welcomes conversations with commercial partners, investors, financing stakeholders, suppliers, buyers, and strategic partners interested in the factory project.',
+      inquiryTypes: ['Partnership discussions', 'Investor communication', 'Supplier cooperation', 'Industrial and commercial inquiries'],
+      briefSubject: 'Request for Vegetable Protein and Oil Factory project brief',
     },
     contact: {
       eyebrow: 'Investor and partner contact',
@@ -189,9 +209,9 @@ export const siteContent = {
   },
   ro: {
     metadata: {
-      title: 'Dorostol Trade SRL | Vegetable Protein and Oil Factory',
+      title: 'Dorostol Trade SRL | Fabrica de proteine vegetale și uleiuri vegetale',
       description:
-        'Dorostol Trade SRL prezintă fabrica planificată Vegetable Protein and Oil Factory în Ialomita Romania.',
+        'Dorostol Trade SRL prezintă fabrica planificată de proteine vegetale și uleiuri vegetale din Ialomita România.',
       locale: 'ro_RO',
       url: 'https://www.dorostol.trade/ro/',
       image: socialPreviewImage,
@@ -214,20 +234,28 @@ export const siteContent = {
     ctas: {
       contact: 'Contactați Dorostol Trade',
       partnership: 'Discutați oportunități de parteneriat',
+      projectBrief: 'Solicitați prezentarea proiectului',
     },
     hero: {
-      eyebrow: 'Vegetable Protein and Oil Factory',
+      eyebrow: 'Fabrica de proteine vegetale și uleiuri vegetale',
       title: 'Proteine vegetale, izolat proteic și uleiuri',
       description:
-        'O fabrică planificată de extracție și procesare în Ialomita Romania, axată pe soia, floarea-soarelui și rapiță.',
+        'O fabrică planificată de extracție și procesare în Ialomita România, axată pe soia, floarea-soarelui și rapiță.',
       focusLabel: 'Direcția proiectului',
       rawMaterials: 'Soia, floarea-soarelui, rapiță',
       note: 'Prezentarea proiectului pentru parteneri și investitori',
       facts: [
         ['43.9M EUR', 'Buget raportat al proiectului'],
         ['35,500 MT', 'Obiectiv de producție pentru Anul 5'],
-        ['Ialomita', 'Romania'],
+        ['Ialomita', 'România'],
       ],
+    },
+    projectStatus: {
+      eyebrow: 'Stadiul proiectului',
+      title: 'Proiect industrial de investiții planificat',
+      description:
+        'Fabrica de proteine vegetale și uleiuri vegetale este prezentată ca un proiect industrial de investiții planificat. Valorile de producție și capacitate sunt obiective pentru Anul 5, nu producție operațională curentă.',
+      note: 'Informații tehnice și comerciale detaliate sunt disponibile prin comunicare directă privind proiectul.',
     },
     overview: {
       eyebrow: 'Prezentarea proiectului',
@@ -240,6 +268,16 @@ export const siteContent = {
         ['2013', 'Înființată în România'],
         ['Aprilie 2025', 'Acord de investiții'],
         ['EUR 43.9M', 'Buget raportat al proiectului'],
+      ],
+    },
+    investmentHighlights: {
+      eyebrow: 'Repere de investiții',
+      title: 'Un profil de proiect concentrat',
+      items: [
+        ['Identitatea proiectului', 'Fabrica de proteine vegetale și uleiuri vegetale'],
+        ['Locație regională', 'Ialomita România'],
+        ['Direcția producției', 'Proteine vegetale și uleiuri'],
+        ['Obiectiv de capacitate pentru Anul 5', '35,500 MT produs final anual'],
       ],
     },
     market: {
@@ -256,10 +294,10 @@ export const siteContent = {
     },
     location: {
       eyebrow: 'Locația fabricii',
-      title: 'Ialomita Romania',
+      title: 'Ialomita România',
       description:
-        'Amplasamentul planificat se află în Ialomita Romania, în apropierea zonelor agricole și cu acces la portul Constanța.',
-      imageAlt: 'Hartă ilustrativă care indică Ialomita Romania, București și Portul Constanța.',
+        'Amplasamentul planificat se află în Ialomita România, în apropierea zonelor agricole și cu acces la portul Constanța.',
+      imageAlt: 'Hartă ilustrativă care indică Ialomita România, București și Portul Constanța.',
       cards: [
         ['Zone agricole', 'Poziționare în apropierea regiunilor relevante pentru cultivarea materiilor prime.'],
         ['Portul Constanța', 'Acces la un important punct logistic la Marea Neagră.'],
@@ -316,13 +354,15 @@ export const siteContent = {
     },
     partnership: {
       eyebrow: 'Oportunități de parteneriat',
-      title: 'Discutați proiectul Vegetable Protein and Oil Factory',
+      title: 'Discutați proiectul fabricii de proteine vegetale și uleiuri vegetale',
       description:
         'Dorostol Trade SRL este deschisă discuțiilor cu parteneri comerciali, investitori, părți interesate de finanțare, furnizori, cumpărători și parteneri strategici interesați de proiectul fabricii.',
+      inquiryTypes: ['Discuții de parteneriat', 'Comunicare cu investitorii', 'Cooperare cu furnizorii', 'Solicitări industriale și comerciale'],
+      briefSubject: 'Solicitare prezentare proiect Fabrica de proteine vegetale și uleiuri vegetale',
     },
     contact: {
       eyebrow: 'Contact pentru investitori și parteneri',
-      title: 'Discutați proiectul Vegetable Protein and Oil Factory',
+      title: 'Discutați proiectul fabricii de proteine vegetale și uleiuri vegetale',
       description:
         'Pentru informații despre proiect, discuții de parteneriat sau solicitări din partea investitorilor, contactați direct Dorostol Trade SRL.',
       details: {
@@ -335,16 +375,16 @@ export const siteContent = {
     },
     footer: {
       description:
-        'Fabrica planificată Vegetable Protein and Oil Factory din Ialomita Romania este axată pe proteine vegetale, izolat proteic și uleiuri vegetale din soia, floarea-soarelui și rapiță.',
+        'Fabrica planificată de proteine vegetale și uleiuri vegetale din Ialomita România este axată pe proteine vegetale, izolat proteic și uleiuri vegetale din soia, floarea-soarelui și rapiță.',
       contact: 'Contact',
       rights: 'Toate drepturile rezervate.',
     },
   },
   bg: {
     metadata: {
-      title: 'Dorostol Trade SRL | Vegetable Protein and Oil Factory',
+      title: 'Dorostol Trade SRL | Завод за растителен протеин и растителни масла',
       description:
-        'Dorostol Trade SRL представя планирания Vegetable Protein and Oil Factory в Ialomita Romania.',
+        'Dorostol Trade SRL представя планирания завод за растителен протеин и растителни масла в Яломица, Румъния.',
       locale: 'bg_BG',
       url: 'https://www.dorostol.trade/bg/',
       image: socialPreviewImage,
@@ -367,9 +407,10 @@ export const siteContent = {
     ctas: {
       contact: 'Свържете се с Dorostol Trade',
       partnership: 'Обсъдете възможности за партньорство',
+      projectBrief: 'Заявете проектен бриф',
     },
     hero: {
-      eyebrow: 'Vegetable Protein and Oil Factory',
+      eyebrow: 'Завод за растителен протеин и растителни масла',
       title: 'Растителни протеини, протеинов изолат и масла',
       description:
         'Планиран завод за екстракция и преработка в Яломица, Румъния, с фокус върху соя, слънчоглед и рапица.',
@@ -379,8 +420,15 @@ export const siteContent = {
       facts: [
         ['43.9M EUR', 'Обявен бюджет на проекта'],
         ['35,500 MT', 'Целево производство за петата година'],
-        ['Ialomita', 'Romania'],
+        ['Яломица', 'Румъния'],
       ],
+    },
+    projectStatus: {
+      eyebrow: 'Статус на проекта',
+      title: 'Планиран индустриален инвестиционен проект',
+      description:
+        'Заводът за растителни протеини и растителни масла е представен като планиран индустриален инвестиционен проект. Стойностите за производство и капацитет са цели за петата година, а не текущо оперативно производство.',
+      note: 'Подробна техническа и търговска информация е налична чрез директна комуникация относно проекта.',
     },
     overview: {
       eyebrow: 'Преглед на проекта',
@@ -393,6 +441,16 @@ export const siteContent = {
         ['2013', 'Създадена в Румъния'],
         ['Април 2025', 'Инвестиционно споразумение'],
         ['EUR 43.9M', 'Обявен бюджет на проекта'],
+      ],
+    },
+    investmentHighlights: {
+      eyebrow: 'Инвестиционни акценти',
+      title: 'Фокусиран профил на проекта',
+      items: [
+        ['Идентичност на проекта', 'Завод за растителен протеин и растителни масла'],
+        ['Регионална локация', 'Яломица, Румъния'],
+        ['Производствен фокус', 'Растителни протеини и масла'],
+        ['Целеви капацитет за петата година', '35,500 MT краен продукт годишно'],
       ],
     },
     market: {
@@ -409,10 +467,10 @@ export const siteContent = {
     },
     location: {
       eyebrow: 'Локация на завода',
-      title: 'Ialomita Romania',
+      title: 'Яломица, Румъния',
       description:
         'Планираната площадка е в Яломица, Румъния, в близост до земеделски райони и с достъп до пристанище Констанца.',
-      imageAlt: 'Илюстративна карта, показваща Ialomita Romania, Букурещ и пристанище Констанца.',
+      imageAlt: 'Илюстративна карта, показваща Яломица, Румъния, Букурещ и пристанище Констанца.',
       cards: [
         ['Земеделски райони', 'Разположение в близост до значими райони за отглеждане на суровини.'],
         ['Пристанище Констанца', 'Достъп до важен черноморски логистичен център.'],
@@ -469,13 +527,15 @@ export const siteContent = {
     },
     partnership: {
       eyebrow: 'Възможности за партньорство',
-      title: 'Обсъдете проекта Vegetable Protein and Oil Factory',
+      title: 'Обсъдете проекта за завод за растителни протеини и растителни масла',
       description:
         'Dorostol Trade SRL е отворена за разговори с търговски партньори, инвеститори, заинтересовани страни от финансирането, доставчици, купувачи и стратегически партньори с интерес към проекта.',
+      inquiryTypes: ['Обсъждане на партньорства', 'Комуникация с инвеститори', 'Сътрудничество с доставчици', 'Индустриални и търговски запитвания'],
+      briefSubject: 'Заявка за проектен бриф Завод за растителен протеин и растителни масла',
     },
     contact: {
       eyebrow: 'Контакт за инвеститори и партньори',
-      title: 'Обсъдете проекта Vegetable Protein and Oil Factory',
+      title: 'Обсъдете проекта за завод за растителни протеини и растителни масла',
       description:
         'За информация относно проекта, обсъждане на партньорства или запитвания от инвеститори се свържете директно с Dorostol Trade SRL.',
       details: {
@@ -488,7 +548,7 @@ export const siteContent = {
     },
     footer: {
       description:
-        'Планираният Vegetable Protein and Oil Factory в Яломица, Румъния, е с фокус върху растителни протеини, протеинов изолат и растителни масла от соя, слънчоглед и рапица.',
+        'Планираният завод за растителни протеини и растителни масла в Яломица, Румъния, е с фокус върху растителни протеини, протеинов изолат и растителни масла от соя, слънчоглед и рапица.',
       contact: 'Контакт',
       rights: 'Всички права запазени.',
     },

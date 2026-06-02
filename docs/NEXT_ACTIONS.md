@@ -18,6 +18,17 @@
 - Decide whether Phase 1.1 refinements are needed.
 - Only then prepare a scoped Codex implementation task.
 
+## Phase 1.2 Credibility Refinement
+- Completed: added a conservative project-status mini-block.
+- Completed: added four concise investment highlights using approved facts only.
+- Completed: strengthened partnership and investor inquiry guidance.
+- Completed: added a direct `mailto:` project-brief request CTA without a file download, form, backend, or API.
+- Pending: final Romanian and Bulgarian translation approval.
+- Pending: Search Console setup.
+- Pending: GA4 decision and privacy / legal minimum.
+- Pending: real cPanel deployment QA.
+- Pending: real site photos, approved renders, process diagrams, and a public PDF if management wants a future proof upgrade.
+
 ## Additional Inputs Needed
 - Approved PDF-based project claims, product names, technical descriptions, and contact details.
 - Approved sustainability and market-value claims.
