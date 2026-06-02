@@ -40,9 +40,9 @@ export const supportedLanguages = [
 export const siteContent = {
   en: {
     metadata: {
-      title: 'Dorostol Trade | Plant Protein and Vegetable Oil Project',
+      title: 'Dorostol Trade SRL | Vegetable Protein and Oil Factory',
       description:
-        'Dorostol Trade presents a planned plant in Andrasesti, Romania, for vegetable proteins, protein isolate, and oils.',
+        'Dorostol Trade SRL presents the planned Vegetable Protein and Oil Factory in Ialomita Romania.',
       locale: 'en_US',
       url: 'https://www.dorostol.trade/',
       image: socialPreviewImage,
@@ -67,24 +67,24 @@ export const siteContent = {
       partnership: 'Discuss Partnership Opportunities',
     },
     hero: {
-      eyebrow: 'Dorostol Trade Plant Project',
+      eyebrow: 'Vegetable Protein and Oil Factory',
       title: 'Vegetable Proteins, Protein Isolate and Oils',
       description:
-        'A planned extraction and processing plant in Andrasesti, Romania, focused on soybean, sunflower, and rapeseed.',
+        'A planned extraction and processing factory in Ialomita Romania, focused on soybean, sunflower, and rapeseed.',
       focusLabel: 'Project focus',
       rawMaterials: 'Soybean, sunflower, rapeseed',
       note: 'Project presentation for partners and investors',
       facts: [
         ['43.9M EUR', 'Reported project budget'],
         ['35,500 MT', 'Year 5 target output'],
-        ['Andrasesti', 'Romania'],
+        ['Ialomita', 'Romania'],
       ],
     },
     overview: {
       eyebrow: 'Project overview',
       title: 'A planned industrial project rooted in regional agriculture',
       description:
-        'Dorostol Trade was established in Romania in 2013 and is part of a family-owned group with more than 30 years of activities across agricultural and food-processing sectors.',
+        'Dorostol Trade SRL was established in Romania in 2013 and is part of a family-owned group with more than 30 years of activities across agricultural and food-processing sectors.',
       detail:
         'The planned plant is focused on extracting and processing vegetable proteins, protein isolate, and vegetable oils from locally relevant crops.',
       stats: [
@@ -107,9 +107,9 @@ export const siteContent = {
     },
     location: {
       eyebrow: 'Plant location',
-      title: 'Andrasesti, Romania',
+      title: 'Ialomita Romania',
       description:
-        'The planned site is approximately 80 km north-east of Bucharest, with proximity to agricultural zones and access to Constanta port.',
+        'The planned site is in Ialomita Romania, with proximity to agricultural zones and access to Constanta port.',
       imageAlt: 'Illustrative map showing Andrasesti, Bucharest and Constanta Port in Romania.',
       cards: [
         ['Agricultural zones', 'Positioned near relevant crop-growing regions.'],
@@ -163,15 +163,15 @@ export const siteContent = {
     },
     partnership: {
       eyebrow: 'Partnership opportunities',
-      title: 'Discuss the Dorostol Trade plant project',
+      title: 'Discuss the Vegetable Protein and Oil Factory',
       description:
-        'Dorostol Trade welcomes conversations with commercial partners, investors, financing stakeholders, suppliers, buyers, and strategic partners interested in the plant project.',
+        'Dorostol Trade SRL welcomes conversations with commercial partners, investors, financing stakeholders, suppliers, buyers, and strategic partners interested in the factory project.',
     },
     contact: {
       eyebrow: 'Investor and partner contact',
-      title: 'Discuss the Dorostol Trade plant project',
+      title: 'Discuss the Vegetable Protein and Oil Factory',
       description:
-        'For project information, partnership discussions, or investor enquiries, contact Dorostol Trade directly.',
+        'For project information, partnership discussions, or investor enquiries, contact Dorostol Trade SRL directly.',
       details: {
         generalEmail: 'General email',
         directContact: 'Direct contact',
@@ -182,16 +182,16 @@ export const siteContent = {
     },
     footer: {
       description:
-        'A planned extraction and processing plant in Andrasesti, Romania, focused on vegetable proteins, protein isolate, and vegetable oils from soybean, sunflower, and rapeseed.',
+        'The planned Vegetable Protein and Oil Factory in Ialomita Romania focuses on vegetable proteins, protein isolate, and vegetable oils from soybean, sunflower, and rapeseed.',
       contact: 'Contact',
       rights: 'All rights reserved.',
     },
   },
   ro: {
     metadata: {
-      title: 'Dorostol Trade | Proiect pentru proteine vegetale și uleiuri',
+      title: 'Dorostol Trade SRL | Vegetable Protein and Oil Factory',
       description:
-        'Dorostol Trade prezintă o fabrică planificată la Andrasesti, România, pentru proteine vegetale, izolat proteic și uleiuri.',
+        'Dorostol Trade SRL prezintă fabrica planificată Vegetable Protein and Oil Factory în Ialomita Romania.',
       locale: 'ro_RO',
       url: 'https://www.dorostol.trade/ro/',
       image: socialPreviewImage,
@@ -216,24 +216,24 @@ export const siteContent = {
       partnership: 'Discutați oportunități de parteneriat',
     },
     hero: {
-      eyebrow: 'Proiectul fabricii Dorostol Trade',
+      eyebrow: 'Vegetable Protein and Oil Factory',
       title: 'Proteine vegetale, izolat proteic și uleiuri',
       description:
-        'O fabrică planificată de extracție și procesare la Andrasesti, România, axată pe soia, floarea-soarelui și rapiță.',
+        'O fabrică planificată de extracție și procesare în Ialomita Romania, axată pe soia, floarea-soarelui și rapiță.',
       focusLabel: 'Direcția proiectului',
       rawMaterials: 'Soia, floarea-soarelui, rapiță',
       note: 'Prezentarea proiectului pentru parteneri și investitori',
       facts: [
         ['43.9M EUR', 'Buget raportat al proiectului'],
         ['35,500 MT', 'Obiectiv de producție pentru Anul 5'],
-        ['Andrasesti', 'România'],
+        ['Ialomita', 'Romania'],
       ],
     },
     overview: {
       eyebrow: 'Prezentarea proiectului',
       title: 'Un proiect industrial planificat, bazat pe agricultura regională',
       description:
-        'Dorostol Trade a fost înființată în România în 2013 și face parte dintr-un grup de familie cu peste 30 de ani de activitate în sectoarele agricol și de procesare alimentară.',
+        'Dorostol Trade SRL a fost înființată în România în 2013 și face parte dintr-un grup de familie cu peste 30 de ani de activitate în sectoarele agricol și de procesare alimentară.',
       detail:
         'Fabrica planificată este axată pe extracția și procesarea proteinelor vegetale, izolatului proteic și uleiurilor vegetale din culturi relevante la nivel local.',
       stats: [
@@ -256,9 +256,9 @@ export const siteContent = {
     },
     location: {
       eyebrow: 'Locația fabricii',
-      title: 'Andrasesti, România',
+      title: 'Ialomita Romania',
       description:
-        'Amplasamentul planificat se află la aproximativ 80 km nord-est de București, în apropierea zonelor agricole și cu acces la portul Constanța.',
+        'Amplasamentul planificat se află în Ialomita Romania, în apropierea zonelor agricole și cu acces la portul Constanța.',
       imageAlt: 'Hartă ilustrativă cu Andrasesti, București și Portul Constanța în România.',
       cards: [
         ['Zone agricole', 'Poziționare în apropierea regiunilor relevante pentru cultivarea materiilor prime.'],
@@ -316,15 +316,15 @@ export const siteContent = {
     },
     partnership: {
       eyebrow: 'Oportunități de parteneriat',
-      title: 'Discutați proiectul fabricii Dorostol Trade',
+      title: 'Discutați proiectul Vegetable Protein and Oil Factory',
       description:
-        'Dorostol Trade este deschisă discuțiilor cu parteneri comerciali, investitori, părți interesate de finanțare, furnizori, cumpărători și parteneri strategici interesați de proiectul fabricii.',
+        'Dorostol Trade SRL este deschisă discuțiilor cu parteneri comerciali, investitori, părți interesate de finanțare, furnizori, cumpărători și parteneri strategici interesați de proiectul fabricii.',
     },
     contact: {
       eyebrow: 'Contact pentru investitori și parteneri',
-      title: 'Discutați proiectul fabricii Dorostol Trade',
+      title: 'Discutați proiectul Vegetable Protein and Oil Factory',
       description:
-        'Pentru informații despre proiect, discuții de parteneriat sau solicitări din partea investitorilor, contactați direct Dorostol Trade.',
+        'Pentru informații despre proiect, discuții de parteneriat sau solicitări din partea investitorilor, contactați direct Dorostol Trade SRL.',
       details: {
         generalEmail: 'Email general',
         directContact: 'Contact direct',
@@ -335,16 +335,16 @@ export const siteContent = {
     },
     footer: {
       description:
-        'O fabrică planificată de extracție și procesare la Andrasesti, România, axată pe proteine vegetale, izolat proteic și uleiuri vegetale din soia, floarea-soarelui și rapiță.',
+        'Fabrica planificată Vegetable Protein and Oil Factory din Ialomita Romania este axată pe proteine vegetale, izolat proteic și uleiuri vegetale din soia, floarea-soarelui și rapiță.',
       contact: 'Contact',
       rights: 'Toate drepturile rezervate.',
     },
   },
   bg: {
     metadata: {
-      title: 'Dorostol Trade | Проект за растителни протеини и масла',
+      title: 'Dorostol Trade SRL | Vegetable Protein and Oil Factory',
       description:
-        'Dorostol Trade представя планиран завод в Андрашещ, Румъния, за растителни протеини, протеинов изолат и масла.',
+        'Dorostol Trade SRL представя планирания Vegetable Protein and Oil Factory в Ialomita Romania.',
       locale: 'bg_BG',
       url: 'https://www.dorostol.trade/bg/',
       image: socialPreviewImage,
@@ -369,24 +369,24 @@ export const siteContent = {
       partnership: 'Обсъдете възможности за партньорство',
     },
     hero: {
-      eyebrow: 'Проект за завод на Dorostol Trade',
+      eyebrow: 'Vegetable Protein and Oil Factory',
       title: 'Растителни протеини, протеинов изолат и масла',
       description:
-        'Планиран завод за екстракция и преработка в Андрашещ, Румъния, с фокус върху соя, слънчоглед и рапица.',
+        'Планиран завод за екстракция и преработка в Яломица, Румъния, с фокус върху соя, слънчоглед и рапица.',
       focusLabel: 'Фокус на проекта',
       rawMaterials: 'Соя, слънчоглед, рапица',
       note: 'Представяне на проекта за партньори и инвеститори',
       facts: [
         ['43.9M EUR', 'Обявен бюджет на проекта'],
         ['35,500 MT', 'Целево производство за петата година'],
-        ['Андрашещ', 'Румъния'],
+        ['Ialomita', 'Romania'],
       ],
     },
     overview: {
       eyebrow: 'Преглед на проекта',
       title: 'Планиран индустриален проект, свързан с регионалното земеделие',
       description:
-        'Dorostol Trade е създадена в Румъния през 2013 г. и е част от семейна група с над 30 години дейност в секторите на земеделието и хранително-вкусовата преработка.',
+        'Dorostol Trade SRL е създадена в Румъния през 2013 г. и е част от семейна група с над 30 години дейност в секторите на земеделието и хранително-вкусовата преработка.',
       detail:
         'Планираният завод е насочен към екстракцията и преработката на растителни протеини, протеинов изолат и растителни масла от значими за региона култури.',
       stats: [
@@ -409,9 +409,9 @@ export const siteContent = {
     },
     location: {
       eyebrow: 'Локация на завода',
-      title: 'Андрашещ, Румъния',
+      title: 'Ialomita Romania',
       description:
-        'Планираната площадка е на приблизително 80 km североизточно от Букурещ, в близост до земеделски райони и с достъп до пристанище Констанца.',
+        'Планираната площадка е в Яломица, Румъния, в близост до земеделски райони и с достъп до пристанище Констанца.',
       imageAlt: 'Илюстративна карта, показваща Андрашещ, Букурещ и пристанище Констанца в Румъния.',
       cards: [
         ['Земеделски райони', 'Разположение в близост до значими райони за отглеждане на суровини.'],
@@ -469,15 +469,15 @@ export const siteContent = {
     },
     partnership: {
       eyebrow: 'Възможности за партньорство',
-      title: 'Обсъдете проекта за завод на Dorostol Trade',
+      title: 'Обсъдете проекта Vegetable Protein and Oil Factory',
       description:
-        'Dorostol Trade е отворена за разговори с търговски партньори, инвеститори, заинтересовани страни от финансирането, доставчици, купувачи и стратегически партньори с интерес към проекта.',
+        'Dorostol Trade SRL е отворена за разговори с търговски партньори, инвеститори, заинтересовани страни от финансирането, доставчици, купувачи и стратегически партньори с интерес към проекта.',
     },
     contact: {
       eyebrow: 'Контакт за инвеститори и партньори',
-      title: 'Обсъдете проекта за завод на Dorostol Trade',
+      title: 'Обсъдете проекта Vegetable Protein and Oil Factory',
       description:
-        'За информация относно проекта, обсъждане на партньорства или запитвания от инвеститори се свържете директно с Dorostol Trade.',
+        'За информация относно проекта, обсъждане на партньорства или запитвания от инвеститори се свържете директно с Dorostol Trade SRL.',
       details: {
         generalEmail: 'Общ имейл',
         directContact: 'Директен контакт',
@@ -488,7 +488,7 @@ export const siteContent = {
     },
     footer: {
       description:
-        'Планиран завод за екстракция и преработка в Андрашещ, Румъния, с фокус върху растителни протеини, протеинов изолат и растителни масла от соя, слънчоглед и рапица.',
+        'Планираният Vegetable Protein and Oil Factory в Яломица, Румъния, е с фокус върху растителни протеини, протеинов изолат и растителни масла от соя, слънчоглед и рапица.',
       contact: 'Контакт',
       rights: 'Всички права запазени.',
     },

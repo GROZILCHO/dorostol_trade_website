@@ -10,6 +10,14 @@
 7. Choose analytics and GA / Search Console setup, or explicitly launch without analytics where applicable.
 8. Validate Apache/cPanel deployment, HTTPS, `www` redirects, direct `/ro/` and `/bg/` refreshes, and production metadata.
 
+## Phase 1.1 Refinement Backlog
+- Management confirmed the public project name, legal company spelling, public location wording, and existing contacts. Review the recorded decision in `docs/DECISIONS_LOG.md`.
+- Review the current map visual because it still references Andrasesti while the confirmed public location wording is `Ialomita Romania`.
+- Request real site photos, an approved plant render, a process diagram, detailed map or layout material, and a public PDF or project brief if management wants a Phase 1.2 proof upgrade.
+- Continue without new visual sections, timeline, process diagram, gallery, or download CTA until assets and claims are approved.
+- Decide whether Phase 1.1 refinements are needed.
+- Only then prepare a scoped Codex implementation task.
+
 ## Additional Inputs Needed
 - Approved PDF-based project claims, product names, technical descriptions, and contact details.
 - Approved sustainability and market-value claims.
@@ -29,3 +37,5 @@
 
 ## Implementation Gate
 Phase 1 must remain a static multilingual site with direct `mailto:` and `tel:` contact links only. Do not add a contact form, backend, API wiring, or form service until a documented Phase 2 decision approves the scope. Complete the remaining pre-launch review and production-host validation before public launch.
+
+Do not implement additional Phase 1.1 frontend refinements until the remaining management answers and assets are received, reviewed by the PM, and converted into a scoped task with approved claims and explicit source-file changes.

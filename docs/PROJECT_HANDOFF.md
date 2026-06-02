@@ -49,6 +49,11 @@ Runtime header and footer logos use optimized WebP files from `dorostol-trade-we
 
 The approved Open Graph preview image is `dorostol-trade-website/public/assets/brand/dorostol-og-preview.png`. Use it for social-sharing metadata. It presents the plant project with the official Dorostol identity, conservative project wording, and no operating-plant implication.
 
+## Phase 1.1 Refinement Backlog
+Management confirmed the public project name as `Vegetable Protein and Oil Factory`, the legal company name as `Dorostol Trade SRL`, the public location wording as `Ialomita Romania` without a comma, and the existing public contacts. Potential refinement ideas are documented in `docs/PHASE_1_1_REFINEMENT_BACKLOG.md`, but additional blocks and visual proof upgrades remain blocked pending approved assets and claims.
+
+The current map visual still references Andrasesti and requires future review against the confirmed `Ialomita Romania` wording. Do not edit the map or add real site photos, renders, process diagrams, detailed map or layout material, galleries, or public PDF download CTAs until management provides and approves the relevant assets.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -64,8 +69,9 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 9. `docs/VISUAL_DIRECTION.md`
 10. `docs/MULTILINGUAL_STRATEGY.md`
 11. `docs/WEBSITE_COPY_MULTILINGUAL.md`
-12. `docs/ISSUES_LOG.md`
-13. `docs/DECISIONS_LOG.md`
+12. `docs/PHASE_1_1_REFINEMENT_BACKLOG.md`
+13. `docs/ISSUES_LOG.md`
+14. `docs/DECISIONS_LOG.md`
 
 ## Next Recommended Task
 Review and approve the Romanian and Bulgarian translations, decide GA / Search Console setup, and validate the static Apache/cPanel deployment on `https://www.dorostol.trade/`.
