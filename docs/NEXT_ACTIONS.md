@@ -29,6 +29,12 @@
 - Pending: real cPanel deployment QA.
 - Pending: real site photos, approved renders, process diagrams, and a public PDF if management wants a future proof upgrade.
 
+## Performance Validation
+- Do not use Lighthouse results from the Vite dev server at `http://localhost:5173/` for launch decisions.
+- Production preview at `http://localhost:4173/` achieved Lighthouse scores: Performance `99`, Accessibility `95`, Best Practices `100`, and SEO `100`.
+- Pending: validate the uploaded cPanel site because hosting compression, cache headers, HTTPS, redirects, and server response time can affect production performance.
+- Pending: run PageSpeed Insights and Lighthouse against the live domain after upload.
+
 ## Additional Inputs Needed
 - Approved PDF-based project claims, product names, technical descriptions, and contact details.
 - Approved sustainability and market-value claims.

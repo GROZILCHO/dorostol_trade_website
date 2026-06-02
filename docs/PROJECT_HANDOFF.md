@@ -59,6 +59,11 @@ The one-page frontend includes conservative project-status and investment-highli
 
 Do not replace the mailto CTA with a file download, contact form, backend, API, or third-party form service unless a later documented decision approves the scope. Keep future real-photo, render, process-diagram, gallery, and public-PDF work blocked until assets and claims are approved.
 
+## Performance Validation
+Lighthouse results from the Vite dev server at `http://localhost:5173/` are not used for launch decisions. Production preview at `http://localhost:4173/` achieved Performance `99`, Accessibility `95`, Best Practices `100`, and SEO `100`.
+
+Real-domain validation remains pending after cPanel upload. Verify hosting compression, cache headers, HTTPS, redirects, server response time, and run PageSpeed Insights plus Lighthouse against the live domain.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
