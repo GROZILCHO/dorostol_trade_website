@@ -110,7 +110,7 @@ export const siteContent = {
       title: 'Ialomita Romania',
       description:
         'The planned site is in Ialomita Romania, with proximity to agricultural zones and access to Constanta port.',
-      imageAlt: 'Illustrative map showing Andrasesti, Bucharest and Constanta Port in Romania.',
+      imageAlt: 'Illustrative map showing Ialomita Romania, Bucharest and Constanta Port.',
       cards: [
         ['Agricultural zones', 'Positioned near relevant crop-growing regions.'],
         ['Constanta port', 'Access to an important Black Sea logistics gateway.'],
@@ -259,7 +259,7 @@ export const siteContent = {
       title: 'Ialomita Romania',
       description:
         'Amplasamentul planificat se află în Ialomita Romania, în apropierea zonelor agricole și cu acces la portul Constanța.',
-      imageAlt: 'Hartă ilustrativă cu Andrasesti, București și Portul Constanța în România.',
+      imageAlt: 'Hartă ilustrativă care indică Ialomita Romania, București și Portul Constanța.',
       cards: [
         ['Zone agricole', 'Poziționare în apropierea regiunilor relevante pentru cultivarea materiilor prime.'],
         ['Portul Constanța', 'Acces la un important punct logistic la Marea Neagră.'],
@@ -412,7 +412,7 @@ export const siteContent = {
       title: 'Ialomita Romania',
       description:
         'Планираната площадка е в Яломица, Румъния, в близост до земеделски райони и с достъп до пристанище Констанца.',
-      imageAlt: 'Илюстративна карта, показваща Андрашещ, Букурещ и пристанище Констанца в Румъния.',
+      imageAlt: 'Илюстративна карта, показваща Ialomita Romania, Букурещ и пристанище Констанца.',
       cards: [
         ['Земеделски райони', 'Разположение в близост до значими райони за отглеждане на суровини.'],
         ['Пристанище Констанца', 'Достъп до важен черноморски логистичен център.'],

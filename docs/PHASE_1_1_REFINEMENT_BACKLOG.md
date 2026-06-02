@@ -16,9 +16,14 @@ Document potential improvements for the next refinement pass after management an
 - Availability of real site photos.
 - Availability of an approved plant render.
 - Availability of a process diagram.
-- Availability of detailed map or layout material.
+- Availability of detailed layout material.
 - Availability of an approved public PDF or presentation.
 - Any additional claims that are approved or prohibited.
+
+## Completed Map Replacement
+- Active public map updated to `dorostol-trade-website/public/assets/plant-project/dorostol-map-ialomita.webp`.
+- Public map wording uses `Ialomita Romania`.
+- The map remains illustrative and does not publish an exact property address.
 
 ## Project Naming Decision
 Use the confirmed conservative public name: `Vegetable Protein and Oil Factory`. Avoid alternative or overly branded names unless management approves a later change.
@@ -44,7 +49,7 @@ Documented for review only. None are approved for implementation yet.
 - Real site photos.
 - Approved plant render.
 - Process diagram.
-- Official map or location material.
+- Additional official map or location material, if management wants a future proof upgrade.
 - Public PDF or project brief.
 - Updated logo exports are handled operationally by Rosen and do not need management discussion unless brand content changes.
 

@@ -12,7 +12,7 @@
 
 ## Phase 1.1 Refinement Backlog
 - Management confirmed the public project name, legal company spelling, public location wording, and existing contacts. Review the recorded decision in `docs/DECISIONS_LOG.md`.
-- Review the current map visual because it still references Andrasesti while the confirmed public location wording is `Ialomita Romania`.
+- Map review and replacement completed: the active public map uses the optimized `dorostol-map-ialomita.webp` asset and the confirmed `Ialomita Romania` wording.
 - Request real site photos, an approved plant render, a process diagram, detailed map or layout material, and a public PDF or project brief if management wants a Phase 1.2 proof upgrade.
 - Continue without new visual sections, timeline, process diagram, gallery, or download CTA until assets and claims are approved.
 - Decide whether Phase 1.1 refinements are needed.

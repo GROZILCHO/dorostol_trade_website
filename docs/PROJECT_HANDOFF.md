@@ -52,7 +52,7 @@ The approved Open Graph preview image is `dorostol-trade-website/public/assets/b
 ## Phase 1.1 Refinement Backlog
 Management confirmed the public project name as `Vegetable Protein and Oil Factory`, the legal company name as `Dorostol Trade SRL`, the public location wording as `Ialomita Romania` without a comma, and the existing public contacts. Potential refinement ideas are documented in `docs/PHASE_1_1_REFINEMENT_BACKLOG.md`, but additional blocks and visual proof upgrades remain blocked pending approved assets and claims.
 
-The current map visual still references Andrasesti and requires future review against the confirmed `Ialomita Romania` wording. Do not edit the map or add real site photos, renders, process diagrams, detailed map or layout material, galleries, or public PDF download CTAs until management provides and approves the relevant assets.
+The active public location map uses `dorostol-trade-website/public/assets/plant-project/dorostol-map-ialomita.webp` and the confirmed `Ialomita Romania` wording. The previous Andrasesti map remains as an inactive reference asset. Do not add real site photos, renders, process diagrams, detailed map or layout material, galleries, or public PDF download CTAs until management provides and approves the relevant assets.
 
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
