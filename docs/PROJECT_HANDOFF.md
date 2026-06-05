@@ -64,6 +64,13 @@ Lighthouse results from the Vite dev server at `http://localhost:5173/` are not 
 
 Real-domain validation remains pending after cPanel upload. Verify hosting compression, cache headers, HTTPS, redirects, server response time, and run PageSpeed Insights plus Lighthouse against the live domain.
 
+## Deployment Status
+Google Search Console profile is active for the Dorostol Trade site. Submit the live sitemap after the production upload is complete.
+
+Deployment target is SuperHosting.bg / cPanel static Apache hosting. Use `docs/DEPLOYMENT_CHECKLIST.md` for the manual upload sequence: build the frontend, upload only the contents of `dorostol-trade-website/dist/` to the document root, confirm hidden `.htaccess` is present, and test `/`, `/ro/`, `/bg/`, HTTPS, `www` redirect, contact links, robots, sitemap, live Lighthouse / PageSpeed, and social preview.
+
+GA4 is not confirmed. Add analytics only through a separate implementation task after the privacy/legal decision is documented.
+
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
 
@@ -82,6 +89,7 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 12. `docs/PHASE_1_1_REFINEMENT_BACKLOG.md`
 13. `docs/ISSUES_LOG.md`
 14. `docs/DECISIONS_LOG.md`
+15. `docs/DEPLOYMENT_CHECKLIST.md`
 
 ## Next Recommended Task
-Review and approve the Romanian and Bulgarian translations, decide GA / Search Console setup, and validate the static Apache/cPanel deployment on `https://www.dorostol.trade/`.
+Review and approve the Romanian and Bulgarian translations, decide GA4 / privacy scope if needed, and validate the SuperHosting.bg / cPanel deployment on `https://www.dorostol.trade/` using `docs/DEPLOYMENT_CHECKLIST.md`.

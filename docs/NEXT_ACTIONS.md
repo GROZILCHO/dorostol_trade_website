@@ -7,7 +7,7 @@
 4. Image optimization completed: runtime map and product images use WebP variants. Keep the original PNG files as source/reference backups.
 5. Runtime logo optimization and lazy loading completed: header and footer use smaller runtime WebP logos; below-fold images load lazily.
 6. Complete the privacy / legal minimum for the static Phase 1 launch.
-7. Choose analytics and GA / Search Console setup, or explicitly launch without analytics where applicable.
+7. Google Search Console profile is active; keep GA4 pending until a separate analytics and privacy decision is made.
 8. Validate Apache/cPanel deployment, HTTPS, `www` redirects, direct `/ro/` and `/bg/` refreshes, and production metadata.
 
 ## Phase 1.1 Refinement Backlog
@@ -23,11 +23,25 @@
 - Completed: added four concise investment highlights using approved facts only.
 - Completed: strengthened partnership and investor inquiry guidance.
 - Completed: added a direct `mailto:` project-brief request CTA without a file download, form, backend, or API.
+- Completed: Google Search Console profile is active.
 - Pending: final Romanian and Bulgarian translation approval.
-- Pending: Search Console setup.
 - Pending: GA4 decision and privacy / legal minimum.
 - Pending: real cPanel deployment QA.
 - Pending: real site photos, approved renders, process diagrams, and a public PDF if management wants a future proof upgrade.
+
+## Deployment Checklist
+- Use `docs/DEPLOYMENT_CHECKLIST.md` for the SuperHosting.bg / cPanel manual upload sequence.
+- Pending: upload the contents of `dorostol-trade-website/dist/` to the production document root.
+- Pending: confirm hidden `.htaccess` is uploaded.
+- Pending: test `https://www.dorostol.trade/`, `/ro/`, and `/bg/`.
+- Pending: test direct refresh on `/ro/` and `/bg/`.
+- Pending: test `https://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
+- Pending: confirm HTTPS has no certificate warning.
+- Pending: open `/robots.txt` and `/sitemap.xml` on the live domain.
+- Pending: submit the live sitemap in Google Search Console.
+- Pending: test contact email and phone links.
+- Pending: run live Lighthouse / PageSpeed and test social preview after deployment.
+- Pending: check compression headers, cache headers, server response time, and asset loading on the live host.
 
 ## Performance Validation
 - Do not use Lighthouse results from the Vite dev server at `http://localhost:5173/` for launch decisions.
@@ -43,13 +57,13 @@
 - Approved multilingual URL strategy.
 - Design-system specification derived from the reference screenshots.
 - Runtime image requirements and asset ownership.
-- Hosting, deployment, and analytics requirements.
+- Hosting, deployment, and analytics requirements. Google Search Console is active; GA4 remains pending.
 - Phase 1 uses direct `mailto:` and `tel:` links only. A contact form is deferred to Phase 2.
 - Whether future forms, CRM, catalog, admin, API, or automation requirements justify a new backend strategy decision.
 - Page-level SEO metadata and internal-linking plan.
 - Canonical production host: `https://www.dorostol.trade/`.
 - Localized SEO and Open Graph metadata.
-- GA / Search Console setup decision and production verification.
+- GA4 setup decision and production verification.
 - Optional after launch-package testing: move oversized original PNG source backups outside `public/` so they are not copied into deployment artifacts.
 
 ## Implementation Gate
