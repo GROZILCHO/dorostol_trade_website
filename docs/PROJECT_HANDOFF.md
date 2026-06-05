@@ -68,6 +68,10 @@ The site is live on SuperHosting.bg / cPanel at `https://www.dorostol.trade/`. L
 
 SuperHosting live QA passed for `/`, `/ro/`, `/bg/`, direct refresh on `/ro/` and `/bg/`, non-www to www redirect, HTTP to HTTPS redirects, contact email and phone links, language switcher, and mobile menu.
 
+Canonical redirect audit passed for all tested root and language URL variants. The official canonical and sharing URL is `https://www.dorostol.trade/`. Root variants `http://dorostol.trade/`, `http://www.dorostol.trade/`, and `https://dorostol.trade/` redirect with a single `301` to `https://www.dorostol.trade/`; the canonical URL returns `200`. Language variants canonicalize to `https://www.dorostol.trade/ro/` and `https://www.dorostol.trade/bg/`; direct refresh on both language paths returns `200`.
+
+No `.htaccess` fix is needed for canonical redirects. Bare-domain text such as `dorostol.trade` may not reliably trigger previews in messaging apps if the app does not auto-link it, but all real HTTP/HTTPS URL variants redirect correctly.
+
 Continue remaining post-launch validation for Facebook, WhatsApp, and LinkedIn social previews after deploying the updated static metadata fallback. Compression headers, cache headers, and server response time checks remain optional if deeper production performance validation is needed.
 
 ## Deployment Status

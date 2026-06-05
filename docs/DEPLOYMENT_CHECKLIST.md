@@ -7,6 +7,10 @@
 - Live `robots.txt` is publicly accessible and references `https://www.dorostol.trade/sitemap.xml`.
 - Live `sitemap.xml` is publicly accessible and includes `https://www.dorostol.trade/`, `https://www.dorostol.trade/ro/`, and `https://www.dorostol.trade/bg/`.
 - Google Search Console sitemap submission succeeded. GSC discovered `3` pages and `0` videos. Last read: `05/06/2026`.
+- Canonical redirect audit completed successfully. Official canonical and sharing URL is `https://www.dorostol.trade/`.
+- All tested root and language URL variants canonicalize correctly with no multi-hop redirect chains.
+- Static `og:image` and `twitter:image` are present in the initial HTML on `/`, `/ro/`, and `/bg/`.
+- No `.htaccess` fix is needed for canonical redirects.
 - GA4 is not yet confirmed and remains pending until a separate analytics and privacy decision is made.
 - Phase 1 remains a static Apache/cPanel deployment with no backend and no contact form.
 
@@ -25,9 +29,18 @@
 - Completed: test `https://www.dorostol.trade/bg/`.
 - Completed: refresh directly on `/ro/`.
 - Completed: refresh directly on `/bg/`.
+- Completed: canonical redirect audit for `http://dorostol.trade/` -> `https://www.dorostol.trade/`.
+- Completed: canonical redirect audit for `http://www.dorostol.trade/` -> `https://www.dorostol.trade/`.
+- Completed: canonical redirect audit for `https://dorostol.trade/` -> `https://www.dorostol.trade/`.
 - Completed: test `https://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
 - Completed: test `http://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
 - Completed: test `http://www.dorostol.trade/` redirects to `https://www.dorostol.trade/`.
+- Completed: canonical redirect audit for all `/ro/` and `/bg/` HTTP, HTTPS, www, and non-www variants.
+
+## Sharing URL
+- Official sharing URL: `https://www.dorostol.trade/`.
+- Bare-domain text such as `dorostol.trade` may not reliably trigger previews in messaging apps if the app does not auto-link it.
+- All real HTTP/HTTPS bare-domain and www URL variants redirect correctly to the canonical URL.
 
 ## Indexing Files
 - Completed: open `https://www.dorostol.trade/robots.txt`.

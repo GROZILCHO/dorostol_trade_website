@@ -29,6 +29,8 @@
 - Completed: live `sitemap.xml` is publicly accessible and includes `/`, `/ro/`, and `/bg/`.
 - Completed: SuperHosting live QA passed for `/`, `/ro/`, `/bg/`, direct `/ro/` and `/bg/` refreshes, redirects, contact links, language switcher, and mobile menu.
 - Completed: Google Search Console sitemap submission succeeded. GSC discovered `3` pages and `0` videos.
+- Completed: canonical redirect audit passed for all tested root and language URL variants with no multi-hop redirect chains.
+- Completed: no `.htaccess` fix is needed for canonical redirects.
 - Pending: final Romanian and Bulgarian translation approval.
 - Pending: GA4 decision and privacy / legal minimum.
 - Pending: real site photos, approved renders, process diagrams, and a public PDF if management wants a future proof upgrade.
@@ -50,6 +52,9 @@
 - Completed: test language switcher and mobile menu.
 - Completed: live Lighthouse baseline observed on `https://www.dorostol.trade/`: Performance `100`, Accessibility `95`, Best Practices `100`, SEO `100`.
 - Completed: static Open Graph and Twitter fallback metadata added to `dorostol-trade-website/index.html` for social crawlers that do not execute JavaScript.
+- Completed: static `og:image` and `twitter:image` confirmed in the initial HTML on `/`, `/ro/`, and `/bg/`.
+- Official sharing URL: `https://www.dorostol.trade/`.
+- Note: bare-domain text such as `dorostol.trade` may not reliably trigger previews in messaging apps if the app does not auto-link it, but all real HTTP/HTTPS URL variants redirect correctly.
 - Pending: retest Facebook, WhatsApp, and LinkedIn social previews after deploying the updated build.
 - Optional pending: check compression headers, cache headers, and server response time on the live host.
 
