@@ -13,6 +13,8 @@
 - Social preview validation completed after redeploy. Meta/Facebook detects `og:image`, `og:title`, and `og:description`; WhatsApp preview works when sharing `https://www.dorostol.trade/`.
 - No `.htaccess` fix is needed for canonical redirects.
 - GA4 is not yet confirmed and remains pending until a separate analytics and privacy decision is made.
+- GA4 Measurement ID exists: `G-L5LCCC4CXG`.
+- GA4 code is not yet implemented unless a later implementation task adds it.
 - Phase 1 remains a static Apache/cPanel deployment with no backend and no contact form.
 
 ## SuperHosting.bg / cPanel Upload
@@ -71,6 +73,8 @@
 - Optional pending: check cache headers.
 - Optional pending: check server response time.
 - Completed: run live Lighthouse after upload.
+- Pending: implement GA4 only after PM confirms immediate vs consent-gated loading and privacy copy requirements.
+- Pending after GA4 deployment: verify `G-L5LCCC4CXG` in GA4 Realtime reports for `/`, `/ro/`, and `/bg/`.
 
 ## Analytics Note
-GA4 can be added later with a separate implementation task and privacy/legal decision. Do not add analytics tracking during deployment unless that decision is documented first.
+GA4 can be added later with a separate implementation task and privacy/legal decision. Do not add analytics tracking during deployment unless that decision is documented first. Do not add Meta Pixel, advertising remarketing, heatmaps, or unnecessary third-party scripts.

@@ -83,7 +83,11 @@ The sitemap was submitted successfully in Google Search Console. GSC reports the
 
 Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects, multilingual refresh paths, and Meta/Facebook plus WhatsApp social previews work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: optional LinkedIn preview testing, plus optional compression headers, cache headers, and server response time checks.
 
-GA4 is not confirmed. Add analytics only through a separate implementation task after the privacy/legal decision is documented.
+GA4 property has been created. Measurement ID: `G-L5LCCC4CXG`. No analytics script is active until a source implementation task is completed.
+
+GA4 implementation is the next controlled post-launch task if PM approves analytics. Use `docs/GA4_PRIVACY_PLAN.md` before implementation. Do not add Meta Pixel, advertising remarketing, heatmaps, tag managers, or unnecessary third-party scripts. Initial scope should be limited to page views for `/`, `/ro/`, and `/bg/` unless a later documented decision approves event tracking.
+
+Before adding GA4 code, PM must confirm whether GA4 should load immediately or after consent, whether a privacy page is required before or with implementation, and whether basic pageview tracking only is enough for the first implementation.
 
 ## Positioning Guardrail
 Future assistants and Codex must treat the reference PDF plant project as the primary source of direction. Do not reintroduce engineering-led corporate-site positioning, broad trade, general transport, or generic corporate services unless a later documented management decision explicitly approves them.
@@ -104,6 +108,7 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 13. `docs/ISSUES_LOG.md`
 14. `docs/DECISIONS_LOG.md`
 15. `docs/DEPLOYMENT_CHECKLIST.md`
+16. `docs/GA4_PRIVACY_PLAN.md`
 
 ## Next Recommended Task
-Complete the remaining post-launch checks in `docs/DEPLOYMENT_CHECKLIST.md`, review and approve the Romanian and Bulgarian translations, and decide GA4 / privacy scope if needed.
+Decide GA4 loading and privacy scope using `docs/GA4_PRIVACY_PLAN.md`, review and approve the Romanian and Bulgarian translations, and complete any optional post-launch checks in `docs/DEPLOYMENT_CHECKLIST.md`.
