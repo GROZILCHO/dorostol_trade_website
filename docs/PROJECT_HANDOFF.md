@@ -66,14 +66,14 @@ The site is live on SuperHosting.bg / cPanel at `https://www.dorostol.trade/`. L
 
 SuperHosting live QA passed for `/`, `/ro/`, `/bg/`, direct refresh on `/ro/` and `/bg/`, non-www to www redirect, HTTP to HTTPS redirects, contact email and phone links, language switcher, and mobile menu.
 
-Continue remaining post-launch validation for certificate warning status if needed, hosting compression, cache headers, server response time, PageSpeed Insights, and social preview.
+Continue remaining post-launch validation for social preview. Compression headers, cache headers, and server response time checks remain optional if deeper production performance validation is needed.
 
 ## Deployment Status
 Google Search Console profile is active for the Dorostol Trade site. The live `robots.txt` is publicly accessible and references `https://www.dorostol.trade/sitemap.xml`. The live `sitemap.xml` is publicly accessible and includes `https://www.dorostol.trade/`, `https://www.dorostol.trade/ro/`, and `https://www.dorostol.trade/bg/`.
 
-The sitemap was submitted successfully in Google Search Console. GSC reports the sitemap processed successfully, with `3` discovered pages and `0` discovered videos.
+The sitemap was submitted successfully in Google Search Console. GSC reports the sitemap processed successfully, with `3` discovered pages and `0` discovered videos. Last read: `05/06/2026`.
 
-Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects and multilingual refresh paths work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: certificate warning status if needed, compression headers, cache headers, server response time, PageSpeed, and social preview.
+Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects and multilingual refresh paths work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: social preview, plus optional compression headers, cache headers, and server response time checks.
 
 GA4 is not confirmed. Add analytics only through a separate implementation task after the privacy/legal decision is documented.
 

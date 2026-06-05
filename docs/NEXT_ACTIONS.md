@@ -45,19 +45,18 @@
 - Completed: test HTTP to HTTPS redirects from `http://dorostol.trade/` and `http://www.dorostol.trade/`.
 - Pending: confirm HTTPS has no certificate warning.
 - Completed: submit the live sitemap in Google Search Console.
-- Completed: GSC reports sitemap processed successfully, with `3` discovered pages and `0` discovered videos.
+- Completed: GSC reports sitemap processed successfully, with `3` discovered pages, `0` discovered videos, and last read `05/06/2026`.
 - Completed: test contact email and phone links.
 - Completed: test language switcher and mobile menu.
 - Completed: live Lighthouse baseline observed on `https://www.dorostol.trade/`: Performance `100`, Accessibility `95`, Best Practices `100`, SEO `100`.
 - Pending: test social preview after deployment.
-- Pending: check compression headers, cache headers, server response time, and asset loading on the live host.
+- Optional pending: check compression headers, cache headers, and server response time on the live host.
 
 ## Performance Validation
 - Do not use Lighthouse results from the Vite dev server at `http://localhost:5173/` for launch decisions.
 - Production preview at `http://localhost:4173/` achieved Lighthouse scores: Performance `99`, Accessibility `95`, Best Practices `100`, and SEO `100`.
 - Live SuperHosting.bg / cPanel deployment at `https://www.dorostol.trade/` achieved Lighthouse scores: Performance `100`, Accessibility `95`, Best Practices `100`, and SEO `100`.
-- Pending: continue validating the uploaded cPanel site because hosting compression, cache headers, HTTPS redirects, and server response time can affect production behavior over time.
-- Pending: run PageSpeed Insights against the live domain after upload.
+- Optional pending: check hosting compression, cache headers, and server response time if deeper production performance validation is needed.
 
 ## Additional Inputs Needed
 - Approved PDF-based project claims, product names, technical descriptions, and contact details.

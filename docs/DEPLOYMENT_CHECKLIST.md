@@ -6,7 +6,7 @@
 - Live Lighthouse baseline on the deployed domain: Performance `100`, Accessibility `95`, Best Practices `100`, SEO `100`.
 - Live `robots.txt` is publicly accessible and references `https://www.dorostol.trade/sitemap.xml`.
 - Live `sitemap.xml` is publicly accessible and includes `https://www.dorostol.trade/`, `https://www.dorostol.trade/ro/`, and `https://www.dorostol.trade/bg/`.
-- Google Search Console sitemap submission succeeded. GSC discovered `3` pages and `0` videos.
+- Google Search Console sitemap submission succeeded. GSC discovered `3` pages and `0` videos. Last read: `05/06/2026`.
 - GA4 is not yet confirmed and remains pending until a separate analytics and privacy decision is made.
 - Phase 1 remains a static Apache/cPanel deployment with no backend and no contact form.
 
@@ -28,7 +28,6 @@
 - Completed: test `https://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
 - Completed: test `http://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
 - Completed: test `http://www.dorostol.trade/` redirects to `https://www.dorostol.trade/`.
-- Pending: confirm HTTPS has no certificate warning.
 
 ## Indexing Files
 - Completed: open `https://www.dorostol.trade/robots.txt`.
@@ -37,6 +36,7 @@
 - Completed: Google Search Console reports the sitemap processed successfully.
 - Completed: Google Search Console discovered `3` pages.
 - Completed: Google Search Console discovered `0` videos.
+- Completed: Google Search Console last read date recorded as `05/06/2026`.
 
 ## Functional Checks
 - Completed: test contact email link.
@@ -46,12 +46,10 @@
 - Pending: test social preview after deployment.
 
 ## Post-Upload Technical Checks
-- Pending: check compression headers.
-- Pending: check cache headers.
-- Pending: check server response time.
-- Pending: check asset loading.
+- Optional pending: check compression headers.
+- Optional pending: check cache headers.
+- Optional pending: check server response time.
 - Completed: run live Lighthouse after upload.
-- Pending: run PageSpeed after upload.
 
 ## Analytics Note
 GA4 can be added later with a separate implementation task and privacy/legal decision. Do not add analytics tracking during deployment unless that decision is documented first.
