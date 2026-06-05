@@ -62,12 +62,18 @@ Do not replace the mailto CTA with a file download, contact form, backend, API, 
 ## Performance Validation
 Lighthouse results from the Vite dev server at `http://localhost:5173/` are not used for launch decisions. Production preview at `http://localhost:4173/` achieved Performance `99`, Accessibility `95`, Best Practices `100`, and SEO `100`.
 
-Real-domain validation remains pending after cPanel upload. Verify hosting compression, cache headers, HTTPS, redirects, server response time, and run PageSpeed Insights plus Lighthouse against the live domain.
+The site is live on SuperHosting.bg / cPanel at `https://www.dorostol.trade/`. Live Lighthouse baseline on the deployed domain achieved Performance `100`, Accessibility `95`, Best Practices `100`, and SEO `100`.
+
+SuperHosting live QA passed for `/`, `/ro/`, `/bg/`, direct refresh on `/ro/` and `/bg/`, non-www to www redirect, HTTP to HTTPS redirects, contact email and phone links, language switcher, and mobile menu.
+
+Continue remaining post-launch validation for certificate warning status if needed, hosting compression, cache headers, server response time, PageSpeed Insights, and social preview.
 
 ## Deployment Status
-Google Search Console profile is active for the Dorostol Trade site. Submit the live sitemap after the production upload is complete.
+Google Search Console profile is active for the Dorostol Trade site. The live `robots.txt` is publicly accessible and references `https://www.dorostol.trade/sitemap.xml`. The live `sitemap.xml` is publicly accessible and includes `https://www.dorostol.trade/`, `https://www.dorostol.trade/ro/`, and `https://www.dorostol.trade/bg/`.
 
-Deployment target is SuperHosting.bg / cPanel static Apache hosting. Use `docs/DEPLOYMENT_CHECKLIST.md` for the manual upload sequence: build the frontend, upload only the contents of `dorostol-trade-website/dist/` to the document root, confirm hidden `.htaccess` is present, and test `/`, `/ro/`, `/bg/`, HTTPS, `www` redirect, contact links, robots, sitemap, live Lighthouse / PageSpeed, and social preview.
+The sitemap was submitted successfully in Google Search Console. GSC reports the sitemap processed successfully, with `3` discovered pages and `0` discovered videos.
+
+Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects and multilingual refresh paths work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: certificate warning status if needed, compression headers, cache headers, server response time, PageSpeed, and social preview.
 
 GA4 is not confirmed. Add analytics only through a separate implementation task after the privacy/legal decision is documented.
 
@@ -92,4 +98,4 @@ Future assistants and Codex must treat the reference PDF plant project as the pr
 15. `docs/DEPLOYMENT_CHECKLIST.md`
 
 ## Next Recommended Task
-Review and approve the Romanian and Bulgarian translations, decide GA4 / privacy scope if needed, and validate the SuperHosting.bg / cPanel deployment on `https://www.dorostol.trade/` using `docs/DEPLOYMENT_CHECKLIST.md`.
+Complete the remaining post-launch checks in `docs/DEPLOYMENT_CHECKLIST.md`, review and approve the Romanian and Bulgarian translations, and decide GA4 / privacy scope if needed.

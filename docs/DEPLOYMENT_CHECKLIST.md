@@ -2,42 +2,56 @@
 
 ## Status
 - Google Search Console profile is active for the Dorostol Trade site.
+- Site is live on SuperHosting.bg / cPanel at `https://www.dorostol.trade/`.
+- Live Lighthouse baseline on the deployed domain: Performance `100`, Accessibility `95`, Best Practices `100`, SEO `100`.
+- Live `robots.txt` is publicly accessible and references `https://www.dorostol.trade/sitemap.xml`.
+- Live `sitemap.xml` is publicly accessible and includes `https://www.dorostol.trade/`, `https://www.dorostol.trade/ro/`, and `https://www.dorostol.trade/bg/`.
+- Google Search Console sitemap submission succeeded. GSC discovered `3` pages and `0` videos.
 - GA4 is not yet confirmed and remains pending until a separate analytics and privacy decision is made.
 - Phase 1 remains a static Apache/cPanel deployment with no backend and no contact form.
 
 ## SuperHosting.bg / cPanel Upload
-- Run `npm.cmd run build` from `dorostol-trade-website/`.
-- Upload the contents of `dorostol-trade-website/dist/` to the production document root.
-- Confirm the hidden `.htaccess` file is uploaded.
-- Do not upload the repository root.
-- Do not upload `node_modules/`.
-- Do not upload `dorostol-trade-backend/`.
-- Do not upload the `dist/` parent folder itself.
+- Completed: run `npm.cmd run build` from `dorostol-trade-website/`.
+- Completed: upload the contents of `dorostol-trade-website/dist/` to the production document root.
+- Completed: hidden `.htaccess` fallback behavior verified through direct `/ro/` and `/bg/` refresh tests.
+- Confirmed rule for future uploads: do not upload the repository root.
+- Confirmed rule for future uploads: do not upload `node_modules/`.
+- Confirmed rule for future uploads: do not upload `dorostol-trade-backend/`.
+- Confirmed rule for future uploads: do not upload the `dist/` parent folder itself.
 
 ## Production URL Tests
-- Test `https://www.dorostol.trade/`.
-- Test `https://www.dorostol.trade/ro/`.
-- Test `https://www.dorostol.trade/bg/`.
-- Refresh directly on `/ro/` and `/bg/`.
-- Test `https://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
-- Confirm HTTPS has no certificate warning.
+- Completed: test `https://www.dorostol.trade/`.
+- Completed: test `https://www.dorostol.trade/ro/`.
+- Completed: test `https://www.dorostol.trade/bg/`.
+- Completed: refresh directly on `/ro/`.
+- Completed: refresh directly on `/bg/`.
+- Completed: test `https://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
+- Completed: test `http://dorostol.trade/` redirects to `https://www.dorostol.trade/`.
+- Completed: test `http://www.dorostol.trade/` redirects to `https://www.dorostol.trade/`.
+- Pending: confirm HTTPS has no certificate warning.
 
 ## Indexing Files
-- Open `https://www.dorostol.trade/robots.txt`.
-- Open `https://www.dorostol.trade/sitemap.xml`.
-- Submit `https://www.dorostol.trade/sitemap.xml` in Google Search Console.
+- Completed: open `https://www.dorostol.trade/robots.txt`.
+- Completed: open `https://www.dorostol.trade/sitemap.xml`.
+- Completed: submit `https://www.dorostol.trade/sitemap.xml` in Google Search Console.
+- Completed: Google Search Console reports the sitemap processed successfully.
+- Completed: Google Search Console discovered `3` pages.
+- Completed: Google Search Console discovered `0` videos.
 
 ## Functional Checks
-- Test contact email links.
-- Test phone links.
-- Test social preview after deployment.
+- Completed: test contact email link.
+- Completed: test phone links.
+- Completed: test language switcher.
+- Completed: test mobile menu.
+- Pending: test social preview after deployment.
 
 ## Post-Upload Technical Checks
-- Check compression headers.
-- Check cache headers.
-- Check server response time.
-- Check asset loading.
-- Run live Lighthouse / PageSpeed after upload.
+- Pending: check compression headers.
+- Pending: check cache headers.
+- Pending: check server response time.
+- Pending: check asset loading.
+- Completed: run live Lighthouse after upload.
+- Pending: run PageSpeed after upload.
 
 ## Analytics Note
 GA4 can be added later with a separate implementation task and privacy/legal decision. Do not add analytics tracking during deployment unless that decision is documented first.
