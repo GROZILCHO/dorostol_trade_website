@@ -49,7 +49,8 @@
 - Completed: test contact email and phone links.
 - Completed: test language switcher and mobile menu.
 - Completed: live Lighthouse baseline observed on `https://www.dorostol.trade/`: Performance `100`, Accessibility `95`, Best Practices `100`, SEO `100`.
-- Pending: test social preview after deployment.
+- Completed: static Open Graph and Twitter fallback metadata added to `dorostol-trade-website/index.html` for social crawlers that do not execute JavaScript.
+- Pending: retest Facebook, WhatsApp, and LinkedIn social previews after deploying the updated build.
 - Optional pending: check compression headers, cache headers, and server response time on the live host.
 
 ## Performance Validation
@@ -72,6 +73,7 @@
 - Page-level SEO metadata and internal-linking plan.
 - Canonical production host: `https://www.dorostol.trade/`.
 - Localized SEO and Open Graph metadata.
+- Static social preview fallback metadata is implemented in `index.html`; live social debugger retest remains pending after deployment.
 - GA4 setup decision and production verification.
 - Optional after launch-package testing: move oversized original PNG source backups outside `public/` so they are not copied into deployment artifacts.
 

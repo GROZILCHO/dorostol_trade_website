@@ -43,7 +43,10 @@
 - Completed: test phone links.
 - Completed: test language switcher.
 - Completed: test mobile menu.
-- Pending: test social preview after deployment.
+- Completed locally: add static Open Graph and Twitter fallback metadata to `dorostol-trade-website/index.html`.
+- Pending after redeploy: test Facebook preview.
+- Pending after redeploy: test WhatsApp preview.
+- Pending after redeploy: test LinkedIn preview.
 
 ## Post-Upload Technical Checks
 - Optional pending: check compression headers.

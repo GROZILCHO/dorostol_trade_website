@@ -49,6 +49,8 @@ Runtime header and footer logos use optimized WebP files from `dorostol-trade-we
 
 The approved Open Graph preview image is `dorostol-trade-website/public/assets/brand/dorostol-og-preview.png`. Use it for social-sharing metadata. It presents the plant project with the official Dorostol identity, conservative project wording, and no operating-plant implication.
 
+`dorostol-trade-website/index.html` contains static fallback Open Graph and Twitter metadata pointing to `https://www.dorostol.trade/assets/brand/dorostol-og-preview.png` so social crawlers can read preview data from the initial HTML response. Runtime localized metadata still exists and may update title, description, canonical, hreflang, and social tags after page load for browser users.
+
 ## Phase 1.1 Refinement Backlog
 Management confirmed the public project name as `Vegetable Protein and Oil Factory`, the legal company name as `Dorostol Trade SRL`, the public location wording as `Ialomita Romania` without a comma, and the existing public contacts. Potential refinement ideas are documented in `docs/PHASE_1_1_REFINEMENT_BACKLOG.md`, but additional blocks and visual proof upgrades remain blocked pending approved assets and claims.
 
@@ -66,14 +68,14 @@ The site is live on SuperHosting.bg / cPanel at `https://www.dorostol.trade/`. L
 
 SuperHosting live QA passed for `/`, `/ro/`, `/bg/`, direct refresh on `/ro/` and `/bg/`, non-www to www redirect, HTTP to HTTPS redirects, contact email and phone links, language switcher, and mobile menu.
 
-Continue remaining post-launch validation for social preview. Compression headers, cache headers, and server response time checks remain optional if deeper production performance validation is needed.
+Continue remaining post-launch validation for Facebook, WhatsApp, and LinkedIn social previews after deploying the updated static metadata fallback. Compression headers, cache headers, and server response time checks remain optional if deeper production performance validation is needed.
 
 ## Deployment Status
 Google Search Console profile is active for the Dorostol Trade site. The live `robots.txt` is publicly accessible and references `https://www.dorostol.trade/sitemap.xml`. The live `sitemap.xml` is publicly accessible and includes `https://www.dorostol.trade/`, `https://www.dorostol.trade/ro/`, and `https://www.dorostol.trade/bg/`.
 
 The sitemap was submitted successfully in Google Search Console. GSC reports the sitemap processed successfully, with `3` discovered pages and `0` discovered videos. Last read: `05/06/2026`.
 
-Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects and multilingual refresh paths work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: social preview, plus optional compression headers, cache headers, and server response time checks.
+Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects and multilingual refresh paths work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: redeploy the updated build with static social metadata fallback, retest social previews, plus optional compression headers, cache headers, and server response time checks.
 
 GA4 is not confirmed. Add analytics only through a separate implementation task after the privacy/legal decision is documented.
 
