@@ -6,8 +6,8 @@
 3. Open Graph preview image completed: use `dorostol-trade-website/public/assets/brand/dorostol-og-preview.png`.
 4. Image optimization completed: runtime map and product images use WebP variants. Keep the original PNG files as source/reference backups.
 5. Runtime logo optimization and lazy loading completed: header and footer use smaller runtime WebP logos; below-fold images load lazily.
-6. Decide GA4 privacy approach: immediate GA4 load or consent-gated GA4.
-7. Google Search Console profile is active. GA4 Measurement ID is available: `G-L5LCCC4CXG`.
+6. GA4 pageview tracking is implemented with Measurement ID `G-L5LCCC4CXG`.
+7. Privacy routes are implemented for `/privacy`, `/ro/privacy`, and `/bg/privacy`.
 8. SuperHosting.bg / cPanel upload and core live QA are completed; keep only explicitly pending post-launch checks open.
 
 ## Phase 1.1 Refinement Backlog
@@ -33,11 +33,13 @@
 - Completed: no `.htaccess` fix is needed for canonical redirects.
 - Completed: Meta/Facebook Sharing Debugger detects the preview image, `og:title`, and `og:description`; missing `fb:app_id` warning is non-blocking.
 - Completed: WhatsApp preview works when sharing the full canonical URL `https://www.dorostol.trade/`.
-- Completed: GA4 property created and Measurement ID recorded: `G-L5LCCC4CXG`.
+- Completed: GA4 pageview tracking implemented for home and privacy routes with Measurement ID `G-L5LCCC4CXG`.
+- Completed: EN/RO/BG privacy routes implemented.
+- Completed: sitemap updated with `/privacy`, `/ro/privacy`, and `/bg/privacy`.
 - Pending: final Romanian and Bulgarian translation approval.
-- Pending: decide whether GA4 should load immediately or only after consent.
-- Pending: prepare EN/RO/BG privacy copy if required before or with GA4 implementation.
-- Pending: confirm whether basic pageview tracking only is enough for the first GA4 implementation.
+- Pending after deploy: verify GA4 Realtime reports for `/`, `/ro/`, `/bg/`, `/privacy`, `/ro/privacy`, and `/bg/privacy`.
+- Pending after deploy: resubmit the updated sitemap in Google Search Console.
+- Pending future decision: cookie / consent banner if stricter compliance is required.
 - Pending: real site photos, approved renders, process diagrams, and a public PDF if management wants a future proof upgrade.
 
 ## Deployment Checklist
@@ -61,6 +63,9 @@
 - Official sharing URL: `https://www.dorostol.trade/`.
 - Note: bare-domain text such as `dorostol.trade` may not reliably trigger previews in messaging apps if the app does not auto-link it, but all real HTTP/HTTPS URL variants redirect correctly.
 - Completed: Meta/Facebook and WhatsApp social preview validation after deploying the updated build.
+- Pending after deploy: verify `/privacy`, `/ro/privacy`, and `/bg/privacy` on the live host.
+- Pending after deploy: verify GA4 Realtime activity for the implemented pageview routes.
+- Pending after deploy: resubmit updated sitemap with privacy URLs in Google Search Console.
 - Optional pending: test LinkedIn social preview.
 - Optional pending: check compression headers, cache headers, and server response time on the live host.
 
@@ -78,19 +83,20 @@
 - Approved multilingual URL strategy.
 - Design-system specification derived from the reference screenshots.
 - Runtime image requirements and asset ownership.
-- Hosting, deployment, and analytics requirements. Google Search Console is active; GA4 Measurement ID `G-L5LCCC4CXG` is available but no analytics script is active until source implementation is completed.
+- Hosting, deployment, and analytics requirements. Google Search Console is active; GA4 pageview tracking is implemented with Measurement ID `G-L5LCCC4CXG`.
 - Phase 1 uses direct `mailto:` and `tel:` links only. A contact form is deferred to Phase 2.
 - Whether future forms, CRM, catalog, admin, API, or automation requirements justify a new backend strategy decision.
 - Page-level SEO metadata and internal-linking plan.
 - Canonical production host: `https://www.dorostol.trade/`.
 - Localized SEO and Open Graph metadata.
 - Static social preview fallback metadata is implemented in `index.html`; Meta/Facebook and WhatsApp validation passed after redeploy.
-- GA4 setup decision and production verification. Next controlled task should decide immediate GA4 vs consent-gated GA4, privacy copy requirements, and basic pageview scope.
+- GA4 production verification in Realtime reports after deployment.
+- Optional future contact, phone, project-brief CTA, and language-switcher event tracking remains deferred.
 - Optional after launch-package testing: move oversized original PNG source backups outside `public/` so they are not copied into deployment artifacts.
 
 ## Implementation Gate
 Phase 1 must remain a static multilingual site with direct `mailto:` and `tel:` contact links only. Do not add a contact form, backend, API wiring, or form service until a documented Phase 2 decision approves the scope. Complete the remaining pre-launch review and production-host validation before public launch.
 
-Do not add GA4 code until the PM confirms whether analytics should load immediately or after consent, whether a privacy page is required before or with implementation, and whether basic pageview tracking only is enough for the first implementation.
+Do not add custom GA4 click events, Meta Pixel, Google Tag Manager, remarketing, heatmaps, contact forms, or additional third-party scripts unless a future documented decision approves the scope.
 
 Do not implement additional Phase 1.1 frontend refinements until the remaining management answers and assets are received, reviewed by the PM, and converted into a scoped task with approved claims and explicit source-file changes.

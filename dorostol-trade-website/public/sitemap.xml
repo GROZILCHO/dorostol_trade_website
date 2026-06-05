@@ -22,4 +22,25 @@
     <xhtml:link rel="alternate" hreflang="bg" href="https://www.dorostol.trade/bg/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dorostol.trade/" />
   </url>
+  <url>
+    <loc>https://www.dorostol.trade/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dorostol.trade/privacy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.dorostol.trade/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://www.dorostol.trade/bg/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dorostol.trade/privacy" />
+  </url>
+  <url>
+    <loc>https://www.dorostol.trade/ro/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dorostol.trade/privacy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.dorostol.trade/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://www.dorostol.trade/bg/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dorostol.trade/privacy" />
+  </url>
+  <url>
+    <loc>https://www.dorostol.trade/bg/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dorostol.trade/privacy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.dorostol.trade/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://www.dorostol.trade/bg/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dorostol.trade/privacy" />
+  </url>
 </urlset>

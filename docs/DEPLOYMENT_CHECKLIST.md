@@ -13,8 +13,8 @@
 - Social preview validation completed after redeploy. Meta/Facebook detects `og:image`, `og:title`, and `og:description`; WhatsApp preview works when sharing `https://www.dorostol.trade/`.
 - No `.htaccess` fix is needed for canonical redirects.
 - GA4 is not yet confirmed and remains pending until a separate analytics and privacy decision is made.
-- GA4 Measurement ID exists: `G-L5LCCC4CXG`.
-- GA4 code is not yet implemented unless a later implementation task adds it.
+- GA4 pageview tracking is implemented with Measurement ID `G-L5LCCC4CXG`.
+- Privacy routes are implemented at `/privacy`, `/ro/privacy`, and `/bg/privacy`.
 - Phase 1 remains a static Apache/cPanel deployment with no backend and no contact form.
 
 ## SuperHosting.bg / cPanel Upload
@@ -30,8 +30,12 @@
 - Completed: test `https://www.dorostol.trade/`.
 - Completed: test `https://www.dorostol.trade/ro/`.
 - Completed: test `https://www.dorostol.trade/bg/`.
+- Pending after deploy: test `https://www.dorostol.trade/privacy`.
+- Pending after deploy: test `https://www.dorostol.trade/ro/privacy`.
+- Pending after deploy: test `https://www.dorostol.trade/bg/privacy`.
 - Completed: refresh directly on `/ro/`.
 - Completed: refresh directly on `/bg/`.
+- Pending after deploy: refresh directly on `/privacy`, `/ro/privacy`, and `/bg/privacy`.
 - Completed: canonical redirect audit for `http://dorostol.trade/` -> `https://www.dorostol.trade/`.
 - Completed: canonical redirect audit for `http://www.dorostol.trade/` -> `https://www.dorostol.trade/`.
 - Completed: canonical redirect audit for `https://dorostol.trade/` -> `https://www.dorostol.trade/`.
@@ -57,6 +61,8 @@
 - Completed: Google Search Console discovered `3` pages.
 - Completed: Google Search Console discovered `0` videos.
 - Completed: Google Search Console last read date recorded as `05/06/2026`.
+- Pending after deploy: confirm updated sitemap includes `/privacy`, `/ro/privacy`, and `/bg/privacy`.
+- Pending after deploy: resubmit the updated sitemap in Google Search Console.
 
 ## Functional Checks
 - Completed: test contact email link.
@@ -73,8 +79,7 @@
 - Optional pending: check cache headers.
 - Optional pending: check server response time.
 - Completed: run live Lighthouse after upload.
-- Pending: implement GA4 only after PM confirms immediate vs consent-gated loading and privacy copy requirements.
-- Pending after GA4 deployment: verify `G-L5LCCC4CXG` in GA4 Realtime reports for `/`, `/ro/`, and `/bg/`.
+- Pending after deploy: verify `G-L5LCCC4CXG` in GA4 Realtime reports for `/`, `/ro/`, `/bg/`, `/privacy`, `/ro/privacy`, and `/bg/privacy`.
 
 ## Analytics Note
-GA4 can be added later with a separate implementation task and privacy/legal decision. Do not add analytics tracking during deployment unless that decision is documented first. Do not add Meta Pixel, advertising remarketing, heatmaps, or unnecessary third-party scripts.
+GA4 pageview tracking is implemented. Do not add Meta Pixel, Google Tag Manager, advertising remarketing, heatmaps, custom click events, or unnecessary third-party scripts without a future documented decision.

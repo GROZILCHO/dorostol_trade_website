@@ -1,6 +1,12 @@
 import { Mail, Phone } from 'lucide-react'
 
-const Footer = ({ content }) => (
+const privacyLinks = {
+  en: { href: '/privacy', label: 'Privacy' },
+  ro: { href: '/ro/privacy', label: 'Confidențialitate' },
+  bg: { href: '/bg/privacy', label: 'Поверителност' },
+}
+
+const Footer = ({ content, language = 'en' }) => (
   <footer className="bg-brand-950 text-white">
     <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
       <div>
@@ -32,7 +38,12 @@ const Footer = ({ content }) => (
       </div>
     </div>
     <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-brand-200">
-      &copy; {new Date().getFullYear()} Dorostol Trade. {content.footer.rights}
+      <div className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+        <span>&copy; {new Date().getFullYear()} Dorostol Trade. {content.footer.rights}</span>
+        <a className="font-semibold text-brand-100 hover:text-white" href={privacyLinks[language].href}>
+          {privacyLinks[language].label}
+        </a>
+      </div>
     </div>
   </footer>
 )
