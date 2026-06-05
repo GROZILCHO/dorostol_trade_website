@@ -10,6 +10,7 @@
 - Canonical redirect audit completed successfully. Official canonical and sharing URL is `https://www.dorostol.trade/`.
 - All tested root and language URL variants canonicalize correctly with no multi-hop redirect chains.
 - Static `og:image` and `twitter:image` are present in the initial HTML on `/`, `/ro/`, and `/bg/`.
+- Social preview validation completed after redeploy. Meta/Facebook detects `og:image`, `og:title`, and `og:description`; WhatsApp preview works when sharing `https://www.dorostol.trade/`.
 - No `.htaccess` fix is needed for canonical redirects.
 - GA4 is not yet confirmed and remains pending until a separate analytics and privacy decision is made.
 - Phase 1 remains a static Apache/cPanel deployment with no backend and no contact form.
@@ -41,6 +42,10 @@
 - Official sharing URL: `https://www.dorostol.trade/`.
 - Bare-domain text such as `dorostol.trade` may not reliably trigger previews in messaging apps if the app does not auto-link it.
 - All real HTTP/HTTPS bare-domain and www URL variants redirect correctly to the canonical URL.
+- Meta/Facebook Sharing Debugger detects the approved preview image: `https://www.dorostol.trade/assets/brand/dorostol-og-preview.png`.
+- Meta/Facebook Sharing Debugger detects `og:title` and `og:description`.
+- Missing `fb:app_id` warning is non-blocking for this Phase 1 static site.
+- WhatsApp preview works when sharing the full canonical URL: `https://www.dorostol.trade/`.
 
 ## Indexing Files
 - Completed: open `https://www.dorostol.trade/robots.txt`.
@@ -57,9 +62,9 @@
 - Completed: test language switcher.
 - Completed: test mobile menu.
 - Completed locally: add static Open Graph and Twitter fallback metadata to `dorostol-trade-website/index.html`.
-- Pending after redeploy: test Facebook preview.
-- Pending after redeploy: test WhatsApp preview.
-- Pending after redeploy: test LinkedIn preview.
+- Completed after redeploy: test Meta/Facebook preview.
+- Completed after redeploy: test WhatsApp preview for the full canonical URL.
+- Optional pending: test LinkedIn preview.
 
 ## Post-Upload Technical Checks
 - Optional pending: check compression headers.

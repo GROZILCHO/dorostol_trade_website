@@ -72,14 +72,16 @@ Canonical redirect audit passed for all tested root and language URL variants. T
 
 No `.htaccess` fix is needed for canonical redirects. Bare-domain text such as `dorostol.trade` may not reliably trigger previews in messaging apps if the app does not auto-link it, but all real HTTP/HTTPS URL variants redirect correctly.
 
-Continue remaining post-launch validation for Facebook, WhatsApp, and LinkedIn social previews after deploying the updated static metadata fallback. Compression headers, cache headers, and server response time checks remain optional if deeper production performance validation is needed.
+Social preview validation passed after deploying the updated static metadata fallback. Meta/Facebook Sharing Debugger detects `og:image`, `og:title`, and `og:description`; the missing `fb:app_id` warning is non-blocking for this Phase 1 static site. WhatsApp preview works when sharing the full canonical URL `https://www.dorostol.trade/`.
+
+Continue remaining post-launch validation for optional LinkedIn preview testing if needed. Compression headers, cache headers, and server response time checks remain optional if deeper production performance validation is needed.
 
 ## Deployment Status
 Google Search Console profile is active for the Dorostol Trade site. The live `robots.txt` is publicly accessible and references `https://www.dorostol.trade/sitemap.xml`. The live `sitemap.xml` is publicly accessible and includes `https://www.dorostol.trade/`, `https://www.dorostol.trade/ro/`, and `https://www.dorostol.trade/bg/`.
 
 The sitemap was submitted successfully in Google Search Console. GSC reports the sitemap processed successfully, with `3` discovered pages and `0` discovered videos. Last read: `05/06/2026`.
 
-Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects and multilingual refresh paths work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: redeploy the updated build with static social metadata fallback, retest social previews, plus optional compression headers, cache headers, and server response time checks.
+Deployment target is SuperHosting.bg / cPanel static Apache hosting. Initial upload is completed and the site is live. Redirects, multilingual refresh paths, and Meta/Facebook plus WhatsApp social previews work. Use `docs/DEPLOYMENT_CHECKLIST.md` for remaining QA: optional LinkedIn preview testing, plus optional compression headers, cache headers, and server response time checks.
 
 GA4 is not confirmed. Add analytics only through a separate implementation task after the privacy/legal decision is documented.
 

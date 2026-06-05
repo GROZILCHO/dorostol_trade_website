@@ -31,6 +31,8 @@
 - Completed: Google Search Console sitemap submission succeeded. GSC discovered `3` pages and `0` videos.
 - Completed: canonical redirect audit passed for all tested root and language URL variants with no multi-hop redirect chains.
 - Completed: no `.htaccess` fix is needed for canonical redirects.
+- Completed: Meta/Facebook Sharing Debugger detects the preview image, `og:title`, and `og:description`; missing `fb:app_id` warning is non-blocking.
+- Completed: WhatsApp preview works when sharing the full canonical URL `https://www.dorostol.trade/`.
 - Pending: final Romanian and Bulgarian translation approval.
 - Pending: GA4 decision and privacy / legal minimum.
 - Pending: real site photos, approved renders, process diagrams, and a public PDF if management wants a future proof upgrade.
@@ -55,7 +57,8 @@
 - Completed: static `og:image` and `twitter:image` confirmed in the initial HTML on `/`, `/ro/`, and `/bg/`.
 - Official sharing URL: `https://www.dorostol.trade/`.
 - Note: bare-domain text such as `dorostol.trade` may not reliably trigger previews in messaging apps if the app does not auto-link it, but all real HTTP/HTTPS URL variants redirect correctly.
-- Pending: retest Facebook, WhatsApp, and LinkedIn social previews after deploying the updated build.
+- Completed: Meta/Facebook and WhatsApp social preview validation after deploying the updated build.
+- Optional pending: test LinkedIn social preview.
 - Optional pending: check compression headers, cache headers, and server response time on the live host.
 
 ## Performance Validation
@@ -78,7 +81,7 @@
 - Page-level SEO metadata and internal-linking plan.
 - Canonical production host: `https://www.dorostol.trade/`.
 - Localized SEO and Open Graph metadata.
-- Static social preview fallback metadata is implemented in `index.html`; live social debugger retest remains pending after deployment.
+- Static social preview fallback metadata is implemented in `index.html`; Meta/Facebook and WhatsApp validation passed after redeploy.
 - GA4 setup decision and production verification.
 - Optional after launch-package testing: move oversized original PNG source backups outside `public/` so they are not copied into deployment artifacts.
 
